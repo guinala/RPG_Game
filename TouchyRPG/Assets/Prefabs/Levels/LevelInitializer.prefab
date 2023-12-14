@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneDependencies:
   - {fileID: 11400000, guid: ead83ef5cc1db7843921e02cca2c584b, type: 2}
+  - {fileID: 11400000, guid: dfbd8deb55e560e4faa07b2b7154648a, type: 2}
   onDependenciesLoaded:
     m_PersistentCalls:
       m_Calls:
@@ -107,6 +108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPath: {fileID: 0}
-  followCamera: {fileID: 0}
   playerPrefab: {fileID: 0}
+  followCamera: {fileID: 0}
   playerParent: {fileID: 0}
