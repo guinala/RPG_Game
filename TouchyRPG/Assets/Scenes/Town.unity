@@ -7063,7 +7063,7 @@ GameObject:
   - component: {fileID: 1044184902}
   - component: {fileID: 1044184901}
   - component: {fileID: 1044184900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7127,7 +7127,7 @@ TilemapRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -7656,8 +7656,8 @@ Tilemap:
   - first: {x: 7, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7666,8 +7666,8 @@ Tilemap:
   - first: {x: 8, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8005,7 +8005,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 43
+  - m_RefCount: 41
     m_Data: {fileID: 11400000, guid: f16d50839ecad6948860065cf75c2e23, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 06f691ed24a85b249b4adc25410068fd, type: 2}
@@ -8013,7 +8013,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e9e2852db14026246845800dc6f87494, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f58fe6c1026c3f347b383da372e5d417, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: f760dfd0cfc33a34fa4237e3976b378e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: dd2ddc85c9495ba4c904ee91638cd1c9, type: 2}
@@ -8027,14 +8027,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e6e1055bab33c1b468e4d21bbe572a09, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 20fb9443fc455ce47a5bf3dda35bca50, type: 2}
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 4fad34f792cc4a440ac3b89d3fde9ea9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 05547b7372a62ae42a0e8abc21d8fd7d, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 0b94e42a9c8998e42a09f2e8cf9928c8, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 43
+  - m_RefCount: 41
     m_Data: {fileID: 9067721375741545204, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -3031801474441947568, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
@@ -8042,7 +8042,7 @@ Tilemap:
     m_Data: {fileID: 1325243254254913169, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 599286406920928944, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: -8660100157716223266, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 5982018635742205042, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
@@ -8056,7 +8056,7 @@ Tilemap:
     m_Data: {fileID: -2148694055812167310, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1995385602010126564, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 7078840617594348961, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1806764334697320229, guid: 59167bb6e832141f7a98b2b85b5cb73d, type: 3}
@@ -46113,9 +46113,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6340642333573759338, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: validTag
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7282106132209861128, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: m_Name
       value: Entrances&Exits
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310916794144622257, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7958866394471224643, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46133,6 +46141,10 @@ PrefabInstance:
       propertyPath: levelEntrance
       value: 
       objectReference: {fileID: 11400000, guid: 9a8b642aca084254a824a7e24523a790, type: 2}
+    - target: {fileID: 8802186367801525147, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: loadingScreen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9023347927820059462, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: entrance
       value: 

@@ -16,7 +16,11 @@ public class TriggerChecker : MonoBehaviour
         if (collision.CompareTag(validTag))
         {
             if (onTriggerEnter != null)
+            {
+                Debug.Log("Evento enviado");
                 onTriggerEnter.Invoke();
+               
+            }
         }
     }
 
