@@ -1,18 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using ScriptableObjectArchitecture;
 
-public class GameManagerSO : MonoBehaviour
+[CreateAssetMenu(fileName = "GameManager", menuName = "ScriptableObjects/Game Manager")]
+public class GameManagerSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameStateSO currentState;
+
+    [Header("Broadcasting events")]
+    public GameStateSOGameEvent gameStateChanged;
+
+    private GameStateSO previousState;
+
+    public void SetGameState(GameStateSO gameState)
     {
-        
+        if(this.currentState != null)
+        {
+            this.previousState = this.currentState;
+        }
+
+        this.currentState = gameState;
+
+        if(this.gameStateChanged != null)
+        {
+            this.gameStateChanged.Raise(this.currentState);
+        }   
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestorePreviousState()
     {
-        
+        this.SetGameState(this.previousState);
     }
 }

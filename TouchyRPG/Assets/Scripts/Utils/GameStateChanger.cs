@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameStateChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Dependencies")]
+    public GameManagerSO gameManager;
 
-    // Update is called once per frame
-    void Update()
+    public void SetGameState(GameStateSO gameState)
     {
-        
+        this.gameManager.SetGameState(gameState);
+    }
+    
+    public void RestorePreviousState()
+    {
+        this.gameManager.RestorePreviousState();
     }
 }

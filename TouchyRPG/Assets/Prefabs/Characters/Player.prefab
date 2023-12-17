@@ -161,6 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6581250527908633198}
   - component: {fileID: 5238469036475996342}
+  - component: {fileID: 8157457627497695367}
   m_Layer: 7
   m_Name: Interactions
   m_TagString: Player
@@ -228,6 +229,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0372055, y: 0.5349326}
   m_EdgeRadius: 0
+--- !u!114 &8157457627497695367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756136501758959705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71a9afe611f33d42a9813dbd33043b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTag: Interactable
+  interactionRequestEvent: {fileID: 11400000, guid: 1c4b19e7573c3724783172ce8337862d, type: 2}
 --- !u!1 &8688115897573520899
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +258,7 @@ GameObject:
   - component: {fileID: 5706674092282647510}
   - component: {fileID: 2264911808897756396}
   - component: {fileID: 1617501270400124398}
+  - component: {fileID: 163117360886418523}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -382,7 +398,19 @@ MonoBehaviour:
     m_ActionId: 362c46b0-27a1-4020-9b09-a3a3f35297b5
     m_ActionName: PlayerControls/Movement[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8157457627497695367}
+        m_TargetAssemblyTypeName: PlayerInteraction, Assembly-CSharp
+        m_MethodName: EnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b88848bd-0d2c-4e07-9db0-e2721a93fbb6
     m_ActionName: PlayerControls/Interact[/Keyboard/e,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
@@ -430,3 +458,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6234034115127378217}
+--- !u!114 &163117360886418523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688115897573520899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8155cd0d96eb74b4f8e1b8934538ddc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateChangedEvent: {fileID: 11400000, guid: 275291aff92f61041b7abd96bd700a89, type: 2}
+  components:
+  - {fileID: 7471444222920663976}
+  enabledStates:
+  - {fileID: 11400000, guid: ac700bc0eb8caba4ba01c568f9e5b603, type: 2}
+  disabledStates:
+  - {fileID: 11400000, guid: c3a7db07c1b111c41822d18ccf706fdf, type: 2}
+  - {fileID: 11400000, guid: 15756f3b28dce4d45825cc0f81e71409, type: 2}
+  - {fileID: 11400000, guid: de8516752041fcd46b115fabda22bb9d, type: 2}
+  onMainMenuState:
+    m_PersistentCalls:
+      m_Calls: []
+  onLoadingState:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayingState:
+    m_PersistentCalls:
+      m_Calls: []
+  onPauseState:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueState:
+    m_PersistentCalls:
+      m_Calls: []
