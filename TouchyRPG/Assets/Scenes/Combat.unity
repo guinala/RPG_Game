@@ -14289,6 +14289,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8464498339477350117}
+        m_TargetAssemblyTypeName: CombatTrigger, Assembly-CSharp
+        m_MethodName: TriggerCombat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7047307120517405854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14333,11 +14345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fe202cfaab6cc45be66a818d3870fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerPosition: {fileID: 0}
-  enemies: []
-  enemyPosition: {fileID: 0}
-  combatRequestEvent: {fileID: 0}
+  player: {fileID: 11400000, guid: d4775a9c4125aa44ca3267dad86363b2, type: 2}
+  playerPosition: {fileID: 1270671131}
+  enemies:
+  - {fileID: 11400000, guid: 8b59c726208ed6846be73ee424b2d177, type: 2}
+  enemyPosition: {fileID: 2107674510}
+  combatRequestEvent: {fileID: 11400000, guid: 6f4034d01210fee4eb34efcca054bf23, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6751812cd8c2d5c418e749aa363b50c3, type: 3}
-  m_Name: CombatUnitSO
+  m_Name: Mutant
   m_EditorClassIdentifier: 
   unitName: Mutant Bee
   baseHP: 100
@@ -18,4 +18,4 @@ MonoBehaviour:
   currentHP: 100
   attackPower: 15
   healingPower: 20
-  unitPrefab: {fileID: 0}
+  unitPrefab: {fileID: 7938767968652046519, guid: 311b7011ca7a6494cbb816eda06d906c, type: 3}
