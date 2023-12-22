@@ -62,7 +62,10 @@ public class GameStateListener : MonoBehaviour
             this.onLoadingState.Invoke();
 
         if (newGameState.stateName == "Playing" && this.onPlayingState != null)
+        {
             this.onPlayingState.Invoke();
+        }
+            
 
         if (newGameState.stateName == "Paused" && this.onPauseState != null)
             this.onPauseState.Invoke();
@@ -71,6 +74,10 @@ public class GameStateListener : MonoBehaviour
             this.onDialogueState.Invoke();
 
         if (newGameState.stateName == "Combat" && this.onCombatState != null)
+        {
+            
             this.onCombatState.Invoke();
+        }
+            
     }
 }

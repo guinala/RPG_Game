@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d16e9a8c3a898f4daf01b1fe73e0a89, type: 3}
   m_Name: Combat
   m_EditorClassIdentifier: 
-  stateName: 
+  stateName: Combat
