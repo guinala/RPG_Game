@@ -16,6 +16,5 @@ MonoBehaviour:
   baseHP: 100
   maxHP: 100
   currentHP: 100
-  attackPower: 20
-  healingPower: 25
   unitPrefab: {fileID: 7938767968652046519, guid: 6773adbc3ac81c949924565f11516a66, type: 3}
+  inventory: {fileID: 11400000, guid: 5f20b0bbf1f18aa4ea59336ee3c88da7, type: 2}

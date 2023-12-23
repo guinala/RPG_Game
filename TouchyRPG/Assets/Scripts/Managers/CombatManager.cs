@@ -69,19 +69,42 @@ public class CombatManager : MonoBehaviour
         StartCoroutine(StartCombat());
     }
 
-    public void OnPlayerAttack()
+    public void OnPlayerUsedItem(int inventoryItemId)
     {
         if (this._combatState != CombatStates.PLAYERTURN)
             return;
 
-        this._request.player.AttackUnit(this._currentEnemy);
+        if (inventoryItemId == 0 || inventoryItemId == 1) // Player used a weapon
+        {
+            if (this._request.player.inventory.weapons.Count > inventoryItemId)
+            {
+                var usedWeapon = this._request.player.inventory.weapons[inventoryItemId];
 
-        if (this._currentEnemy.currentHP <= 0f) // Enemy is dead
-        {
-            StartCoroutine(CombatWon());
+                this._request.player.AttackUnit(this._currentEnemy, usedWeapon);
+
+                if (this._currentEnemy.currentHP <= 0f) // Enemy is dead
+                {
+                    StartCoroutine(CombatWon());
+                }
+                else
+                {
+                    StartCoroutine(EnemyTurn());
+                }
+            }
         }
-        else
+
+        else if (inventoryItemId == 2 || inventoryItemId == 3)
         {
+            var consumableIndex = inventoryItemId % 2;
+
+            if (this._request.player.inventory.consumables.Count > consumableIndex)
+            {
+                var usedConsumable = this._request.player.inventory.consumables[consumableIndex];
+
+                this._request.player.Heal(usedConsumable.item.healPower);
+                this._request.player.inventory.RemoveConsumable(usedConsumable.item);
+            }
+
             StartCoroutine(EnemyTurn());
         }
     }
@@ -110,7 +133,7 @@ public class CombatManager : MonoBehaviour
         // Configure HUD
         this.combatUI.ResetHUD();
         this.combatUI.ShowCombatMenu();
-        this.combatUI.SetupHUD(this._request.player, this._currentEnemy, this._currentLevel, this._gold);
+        this.combatUI.SetupHUD(this._request.player, this._currentEnemy, this._request.player.inventory, this._currentLevel, this._gold);
         this.combatUI.SetInfoText(combatStartedInfoText);
 
         yield return new WaitForSeconds(this.timeBetweenActions);
@@ -135,7 +158,9 @@ public class CombatManager : MonoBehaviour
 
         // Enemy attacks
         this.combatUI.SetInfoText(enemyAttackedInfoText);
-        this._currentEnemy.AttackUnit(this._request.player);
+
+        var usedWeapon = this._currentEnemy.inventory.weapons[0]; // Always the first weapon for the enemy, change if you like
+        this._currentEnemy.AttackUnit(this._request.player, usedWeapon);
 
         yield return new WaitForSeconds(this.timeBetweenActions);
 
@@ -176,6 +201,11 @@ public class CombatManager : MonoBehaviour
 
         this.combatUI.ShowLostMenu();
         this.ResetEnemysHPToBase();
+    }
+
+    public void FinishCombat()
+    {
+        this._request.player.inventory.AddGold(this._gold);
     }
 
     private void ResetEnemysHPToBase()

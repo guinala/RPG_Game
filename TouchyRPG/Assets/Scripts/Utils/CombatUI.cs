@@ -9,6 +9,13 @@ public class CombatUI : MonoBehaviour
     public GameObject wonMenu;
     public GameObject lostMenu;
 
+    public Image firstWeaponImage;
+    public Image secondWeaponImage;
+    public Image firstConsumableImage;
+    public TextMeshProUGUI firstConsumableAmountText;
+    public Image secondConsumableImage;
+    public TextMeshProUGUI secondConsumableAmountText;
+
     public TextMeshProUGUI infoText;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI goldText;
@@ -23,13 +30,14 @@ public class CombatUI : MonoBehaviour
     // Private
     private CombatUnitSO _player;
     private CombatUnitSO _enemy;
+    private InventorySO _playerInventory;
 
-
-    public void SetupHUD(CombatUnitSO player, CombatUnitSO enemy, int level, int gold)
+    public void SetupHUD(CombatUnitSO player, CombatUnitSO enemy, InventorySO playerInventory, int level, int gold)
     {
         // Save references for later
         this._player = player;
         this._enemy = enemy;
+        this._playerInventory = playerInventory;
 
         // Link HUD
         this.playerName.text = this._player.unitName;
@@ -42,6 +50,34 @@ public class CombatUI : MonoBehaviour
 
         this.levelText.text = "Level \n" + level.ToString();
         this.goldText.text = gold.ToString();
+
+        // Items
+
+        // First weapon
+        if (playerInventory.weapons.Count > 0)
+        {
+            var firstWeapon = playerInventory.weapons[0];
+            this.firstWeaponImage.sprite = firstWeapon.icon;
+            this.firstWeaponImage.color = Color.white;
+        }
+        else
+        {
+            this.firstWeaponImage.sprite = null;
+            this.firstWeaponImage.color = Color.clear;
+        }
+
+        // Second weapon
+        if (playerInventory.weapons.Count > 1)
+        {
+            var secondWeapon = playerInventory.weapons[1];
+            this.secondWeaponImage.sprite = secondWeapon.icon;
+            this.secondWeaponImage.color = Color.white;
+        }
+        else
+        {
+            this.secondWeaponImage.sprite = null;
+            this.secondWeaponImage.color = Color.clear;
+        }
     }
 
 
@@ -91,6 +127,19 @@ public class CombatUI : MonoBehaviour
 
         this.levelText.text = "Level \n-";
         this.goldText.text = "";
+
+        // Items
+        this.firstWeaponImage.sprite = null;
+        this.firstWeaponImage.color = Color.clear;
+
+        this.secondWeaponImage.sprite = null;
+        this.secondWeaponImage.color = Color.clear;
+
+        this.firstConsumableImage.sprite = null;
+        this.firstConsumableImage.color = Color.clear;
+
+        this.secondConsumableImage.sprite = null;
+        this.secondConsumableImage.color = Color.clear;
     }
 
     private void Update()
@@ -100,5 +149,38 @@ public class CombatUI : MonoBehaviour
 
         if (this._enemy != null)
             this.enemyHP.value = this._enemy.currentHP;
+
+        if (this._playerInventory != null)
+        {
+            // first consumable
+            if (this._playerInventory.consumables.Count > 0)
+            {
+                var firstConsumable = this._playerInventory.consumables[0];
+                this.firstConsumableImage.sprite = firstConsumable.item.icon;
+                this.firstConsumableImage.color = Color.white;
+                this.firstConsumableAmountText.text = firstConsumable.amount.ToString();
+            }
+            else
+            {
+                this.firstConsumableImage.sprite = null;
+                this.firstConsumableImage.color = Color.clear;
+                this.firstConsumableAmountText.text = null;
+            }
+
+            // second consumable
+            if (this._playerInventory.consumables.Count > 1)
+            {
+                var secondConsumable = this._playerInventory.consumables[1];
+                this.secondConsumableImage.sprite = secondConsumable.item.icon;
+                this.secondConsumableImage.color = Color.white;
+                this.secondConsumableAmountText.text = secondConsumable.amount.ToString();
+            }
+            else
+            {
+                this.secondConsumableImage.sprite = null;
+                this.secondConsumableImage.color = Color.clear;
+                this.secondConsumableAmountText.text = null;
+            }
+        }
     }
 }

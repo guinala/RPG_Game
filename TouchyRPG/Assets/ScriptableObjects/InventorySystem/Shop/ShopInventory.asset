@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ef7a10a23cfeb4cb6851b8ee45a299, type: 3}
+  m_Name: ShopInventory
+  m_EditorClassIdentifier: 
+  gold: 0
+  weapons:
+  - {fileID: 11400000, guid: 248719be7b1c1c14db12f5362dde3960, type: 2}
+  - {fileID: 11400000, guid: 729ffa8d6441c3c498111f4c16e43370, type: 2}
+  consumables:
+  - item: {fileID: 11400000, guid: 73eb0f237a460f443aee236bdef3c05a, type: 2}
+    amount: 9
+  - item: {fileID: 11400000, guid: 64a602ea29f9d824590315dcf667e902, type: 2}
+    amount: 9
