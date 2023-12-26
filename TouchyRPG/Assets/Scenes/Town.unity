@@ -1864,11 +1864,61 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sensei
       objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 318047659}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerMission
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MissionTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738788666506210391, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8227483615063247060, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 318047659}
   m_SourcePrefab: {fileID: 100100000, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+--- !u!1 &318047658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8227483615063247060, guid: ac0e458157ad744d0b28c62b90c40786, type: 3}
+  m_PrefabInstance: {fileID: 318047657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &318047659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318047658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39259f0fe8126324c9974bdcbc11924d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mission: {fileID: 11400000, guid: 371baa1e2fe7abc4d909a082f5bbc98a, type: 2}
+  missionRequestEvent: {fileID: 11400000, guid: 429a1742c95c860498ed512cbbf4bb68, type: 2}
 --- !u!1001 &323061777
 PrefabInstance:
   m_ObjectHideFlags: 0
