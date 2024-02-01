@@ -11,6 +11,7 @@ public class MissionUI : MonoBehaviour
     {
         ResetUI();
         SetMissionUI(mission);
+        mission.instantiateMissionIcon();
     }
 
     private void SetMissionUI(MissionSO mission)

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InitialMissionSO
   m_EditorClassIdentifier: 
   title: Claim Your Sword
-  missionDestinationPoint: {x: 0, y: 0, z: 0}
+  missionDestinationPoint: {x: -6, y: 2.75, z: 0}
   information: You have forgot your sword. Go home and take it
   goldReward: 50
+  unitPrefab: {fileID: 8187101316191994142, guid: ec622eaf1a1ce2348834338277c03780, type: 3}

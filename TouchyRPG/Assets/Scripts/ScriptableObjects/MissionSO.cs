@@ -8,4 +8,16 @@ public class MissionSO : ScriptableObject
     [TextArea(3, 10)]
     public string information;
     public int goldReward;
+    public GameObject unitPrefab;
+
+
+    
+    public void instantiateMissionIcon()
+    {
+        GameObject icon;
+
+        icon = Instantiate(unitPrefab, missionDestinationPoint, Quaternion.identity);
+
+    }
+    
 }

@@ -13,4 +13,6 @@ public class MissionTrigger : MonoBehaviour
     {
         this.missionRequestEvent.Raise(this.mission);
     }
+
+  
 }
