@@ -17,7 +17,7 @@ public class MissionSO : ScriptableObject
     public Vector3 missionDestinationPoint;
     [TextArea(3, 10)]
     public List<string> information = new List<string>();
-    private int currentState = 0;
+    public int currentState = 0;
     public int goldReward;
     public GameObject unitPrefab;
     //public Dictionary<int, string> estados = new Dictionary<int, string>();

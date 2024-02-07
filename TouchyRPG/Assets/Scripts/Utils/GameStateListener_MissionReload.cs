@@ -13,7 +13,7 @@ public class GameStateListener_MissionReload : MonoBehaviour
     public List<GameStateSO> enabledStates;
     public List<GameStateSO> disabledStates;
 
-    private GameStateSO gameStateSO_current;
+    private bool loading = false;
 
     [Header("Actions")]
     public UnityEvent loadedScene;
@@ -52,13 +52,17 @@ public class GameStateListener_MissionReload : MonoBehaviour
 
     private void InvokeActions(GameStateSO newGameState)
     {
+       
+
         if (newGameState.stateName == "Loading")
-            gameStateSO_current = newGameState;
+            loading = true;
 
-        if(gameStateSO_current.stateName == "Loading")
+        if(loading = true && newGameState.stateName != "Loading")
+        {
             this.loadedScene.Invoke();
-
-
+            loading = false;
+        }
+        Debug.Log("EL estado de loading es: " + loading);
 
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using static UnityEditorInternal.VersionControl.ListControl;
@@ -27,7 +28,9 @@ public class MissionManager : MonoBehaviour
        // this.missionUI.StartMission(
          //   mission
         //);
-        mission.Start();
+     
+            mission.Start();
+            questList.questList.Add(mission);
 
        
     }
@@ -35,6 +38,7 @@ public class MissionManager : MonoBehaviour
 
     public void ReloadMissions(QuestListSO questList)
     {
+        Debug.Log("Voy a cargar");
         questList.reload();
     }
 

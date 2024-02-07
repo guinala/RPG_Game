@@ -1306,17 +1306,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3392210298535664154, guid: 9fa5a55bd409b3a4486e58319692db15, type: 3}
   m_PrefabInstance: {fileID: 2355952085251302105}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &769081914 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2188561370029232436, guid: 9fa5a55bd409b3a4486e58319692db15, type: 3}
-  m_PrefabInstance: {fileID: 2355952085251302105}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769081912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe777d79bbc136d48bb896d66223a2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &780263050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1437638957905258993, guid: 5cdb02051b82d41d4ab483d4066fbab6, type: 3}
@@ -1368,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6b1e11b09032d4387fb8e437a71f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionUI: {fileID: 769081914}
+  missionUI: {fileID: 0}
   questList: {fileID: 11400000, guid: fb0cac82bc4566d48b240259d3ba38a1, type: 2}
 --- !u!114 &928592251
 MonoBehaviour:
@@ -1418,9 +1407,7 @@ MonoBehaviour:
   gameStateChangedEvent: {fileID: 11400000, guid: 275291aff92f61041b7abd96bd700a89, type: 2}
   components: []
   enabledStates: []
-  disabledStates:
-  - {fileID: 11400000, guid: de8516752041fcd46b115fabda22bb9d, type: 2}
-  - {fileID: 11400000, guid: 77fb11bf456a9b4488b839f919796421, type: 2}
+  disabledStates: []
   loadedScene:
     m_PersistentCalls:
       m_Calls:
