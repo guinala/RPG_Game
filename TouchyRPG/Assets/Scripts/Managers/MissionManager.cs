@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEditorInternal.VersionControl.ListControl;
 
 public class MissionManager : MonoBehaviour
 {
     [Header("Dependencies")]
     public MissionUI missionUI;
+    public QuestListSO questList;
 
     //[Header("Action events")]
     //public UnityEvent onConversationStarted;
@@ -22,11 +24,18 @@ public class MissionManager : MonoBehaviour
     {
         
 
-        this.missionUI.StartMission(
-            mission
-        );
+       // this.missionUI.StartMission(
+         //   mission
+        //);
+        mission.Start();
 
        
+    }
+
+
+    public void ReloadMissions(QuestListSO questList)
+    {
+        questList.reload();
     }
 
    

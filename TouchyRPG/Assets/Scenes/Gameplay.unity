@@ -1333,6 +1333,7 @@ GameObject:
   - component: {fileID: 928592249}
   - component: {fileID: 928592250}
   - component: {fileID: 928592251}
+  - component: {fileID: 928592252}
   m_Layer: 0
   m_Name: MissionManager
   m_TagString: Untagged
@@ -1368,6 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionUI: {fileID: 769081914}
+  questList: {fileID: 11400000, guid: fb0cac82bc4566d48b240259d3ba38a1, type: 2}
 --- !u!114 &928592251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,6 +1403,39 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _debugValue: {fileID: 0}
+--- !u!114 &928592252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928592248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d55a0c86c5b6c04e93376536e2dd1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateChangedEvent: {fileID: 11400000, guid: 275291aff92f61041b7abd96bd700a89, type: 2}
+  components: []
+  enabledStates: []
+  disabledStates:
+  - {fileID: 11400000, guid: de8516752041fcd46b115fabda22bb9d, type: 2}
+  - {fileID: 11400000, guid: 77fb11bf456a9b4488b839f919796421, type: 2}
+  loadedScene:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 928592250}
+        m_TargetAssemblyTypeName: MissionManager, Assembly-CSharp
+        m_MethodName: ReloadMissions
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: fb0cac82bc4566d48b240259d3ba38a1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: QuestListSO, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1069502584 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4799185272889500584, guid: 5cdb02051b82d41d4ab483d4066fbab6, type: 3}

@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Claim Your Sword
   missionDestinationPoint: {x: -6, y: 2.75, z: 0}
-  information: You have forgot your sword. Go home and take it
+  information:
+  - "\xA1You forgot your sword! Go home and take it"
+  currentState: 1
   goldReward: 50
   unitPrefab: {fileID: 8187101316191994142, guid: ec622eaf1a1ce2348834338277c03780, type: 3}
+  listState:
+  - scene: Town
+    state: 1
+  - scene: House
+    state: 2
+  - scene: Town
+    state: 3

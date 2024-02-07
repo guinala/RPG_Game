@@ -10,15 +10,17 @@ public class MissionUI : MonoBehaviour
     public void StartMission(MissionSO mission)
     {
         ResetUI();
-        SetMissionUI(mission);
-        mission.instantiateMissionIcon();
+        //SetMissionUI(mission);
+        //mission.instantiateMissionIcon();
     }
 
+    /**
     private void SetMissionUI(MissionSO mission)
     {
         titleText.text = mission.title;
         information.text = mission.information;
     }
+    */
 
     public void ResetUI()
     {
