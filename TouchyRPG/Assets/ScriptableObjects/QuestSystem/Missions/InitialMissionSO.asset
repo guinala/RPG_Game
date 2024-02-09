@@ -13,16 +13,21 @@ MonoBehaviour:
   m_Name: InitialMissionSO
   m_EditorClassIdentifier: 
   title: Claim Your Sword
-  missionDestinationPoint: {x: -6, y: 2.75, z: 0}
+  missionDestinationPoints:
+  - destination: {x: -5.5, y: 2.9, z: 0}
+    state: 1
+  - destination: {x: 0, y: -7.5, z: 0}
+    state: 2
   information:
-  - "\xA1You forgot your sword! Go home and take it"
+  - destination: Go to home and claim your sword
+    state: 1
+  - destination: Talk to Sensei
+    state: 2
   currentState: 1
   goldReward: 50
   unitPrefab: {fileID: 8187101316191994142, guid: ec622eaf1a1ce2348834338277c03780, type: 3}
   listState:
-  - scene: Town
-    state: 1
   - scene: House
-    state: 2
+    state: 1
   - scene: Town
-    state: 3
+    state: 2
