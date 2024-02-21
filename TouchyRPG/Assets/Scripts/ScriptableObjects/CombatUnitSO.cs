@@ -8,6 +8,7 @@ public class CombatUnitSO : ScriptableObject
     public float baseHP;
     public float maxHP;
     public float currentHP;
+    public int exp;
 
     //public float attackPower;
     //public float healingPower;

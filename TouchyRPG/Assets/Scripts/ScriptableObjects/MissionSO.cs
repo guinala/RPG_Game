@@ -12,6 +12,7 @@ public class MissionSO : ScriptableObject
     {
         public string scene_dest;
         public int state;
+        public bool requisito;
     }
 
     [Serializable]
@@ -19,6 +20,7 @@ public class MissionSO : ScriptableObject
     {
         public Vector3 destination;
         public int state;
+        public string scene;
     }
 
     [Serializable]
@@ -27,19 +29,29 @@ public class MissionSO : ScriptableObject
         public string destination;
         public int state;
     }
-
+    
+    
     public string title;
     public List<DestinationPoints> missionDestinationPoints = new List<DestinationPoints>();
     public List<Information> information = new List<Information>();
     public int currentState = 0;
-    public int goldReward;
     public GameObject unitPrefab;
     public Dictionary<int, Vector3> destinationPoints = new Dictionary<int, Vector3>();
     public List<State> listState = new List<State>();
     
+    
+    
 
+    public void StateUp()
+    {
+        currentState++;
+    }
 
-
+    public void StateDown()
+    {
+        currentState--;
+    }
+    
     public void Start()
     {
         // Agregar objetos a un diccionario usando el índice como clave
@@ -51,7 +63,7 @@ public class MissionSO : ScriptableObject
             destinationPoints.Add(estado, missionDestinationPoints[i].destination);
         }
         */
-
+    
         currentState = listState[0].state;
         Debug.Log("El estado actual del estado es:" + currentState);
         instantiateMissionIcon();
@@ -60,7 +72,7 @@ public class MissionSO : ScriptableObject
         unEnable();
 
         
-
+    
     }
 
     public void unEnable()
@@ -106,7 +118,7 @@ public class MissionSO : ScriptableObject
         {
             if(scene.state == currentState)
             {
-                if(scene.scene_dest == nombreEscenaActual)
+                if(scene.scene_dest == nombreEscenaActual && scene.requisito == false)
                 {
                     currentState++;
                 }
