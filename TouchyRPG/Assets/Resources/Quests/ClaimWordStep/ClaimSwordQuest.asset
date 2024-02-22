@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: ClaimSwordQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: ClaimSwordQuest
+  displayName: Claim Your Sword
+  initialConversation: 1
+  endConversation: 1
+  conversation_initial: {fileID: 11400000, guid: f152fcae54884704181e2cffbab43d4d, type: 2}
+  conversation_end: {fileID: 11400000, guid: df7e529844a1c7f4f88d0e9407165c5f, type: 2}
   levelRequired: 0
   questPrerequisites: []
   questStepsPrefabs:

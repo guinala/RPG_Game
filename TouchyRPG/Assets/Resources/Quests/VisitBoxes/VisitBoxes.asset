@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: VisitBoxes
   m_EditorClassIdentifier: 
   <id>k__BackingField: VisitBoxes
+  displayName: 
+  initialConversation: 0
+  endConversation: 0
+  conversation_initial: {fileID: 0}
+  conversation_end: {fileID: 0}
   levelRequired: 1
   questPrerequisites: []
   questStepsPrefabs: []

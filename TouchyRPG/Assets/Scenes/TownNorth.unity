@@ -20038,6 +20038,101 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2090030964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2416591923226015263, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416591923226015263, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564649925286517906, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: sceneToLoad
+      value: 
+      objectReference: {fileID: 11400000, guid: ea06c08765a556e41a79dff7ef533af6, type: 2}
+    - target: {fileID: 2564649925286517906, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: levelEntrance
+      value: 
+      objectReference: {fileID: 11400000, guid: 7df0d5928a0a5624ca5bbfbb64180492, type: 2}
+    - target: {fileID: 5519953124556070752, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_Name
+      value: ExitFromTown
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923056762793174086, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282106132209861128, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_Name
+      value: Entrances&Exits
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510862150726759837, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_Name
+      value: EntranceFromTown
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023347927820059462, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: entrance
+      value: 
+      objectReference: {fileID: 11400000, guid: dcdcbefc78275464997c073a046536bf, type: 2}
+    - target: {fileID: 9119646800888725640, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119646800888725640, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.59
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 3155292445638344080, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+    - {fileID: 7310916794144622257, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -20047,3 +20142,4 @@ SceneRoots:
   - {fileID: 1612648526}
   - {fileID: 565354561}
   - {fileID: 1132643049}
+  - {fileID: 2090030964}

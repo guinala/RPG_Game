@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.XR;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "QuestInfoSO", menuName = "ScriptableObjects/Quests/Quest")]
@@ -15,6 +16,12 @@ public class QuestInfoSO : ScriptableObject
         UnityEditor.EditorUtility.SetDirty(this);
         #endif
     }
+    public string displayName;
+    public bool initialConversation;
+    public bool endConversation;
+    public ConversationSO conversation_initial;
+    public ConversationSO conversation_end;
+
     [Header("Requieremnts")]
     public int levelRequired;
 

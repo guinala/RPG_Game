@@ -7,6 +7,7 @@ public class QuestManager : MonoBehaviour
     [Header("Config")]
     [SerializeField] private bool loadQuestState = true;
 
+    private static bool firstTime = false;
     private Dictionary<string, Quest> questMap;
 
     //Quest Start requirements
@@ -18,6 +19,10 @@ public class QuestManager : MonoBehaviour
         Debug.Log("UNity es cacota");
         questMap = CreateQuestMap();
         Debug.Log("Unity es caca");
+        if(loadQuestState == false)
+        {
+            loadQuestState = true;
+        }
     }
 
     private void Start()
@@ -90,6 +95,7 @@ public class QuestManager : MonoBehaviour
                 {
                     if (GetQuestById(prerequisiteQuestInfo.id).state != QuestState.FINISHED)
                     {
+                        Debug.Log("Requisitos no cumplidos");
                         meetRequirements = false;
                     }
                 }
@@ -111,6 +117,7 @@ public class QuestManager : MonoBehaviour
         quest.InstantiateCurrentQuestStep(this.transform);
         ChangeQuestState(id, QuestState.IN_PROGRESS);
         Debug.Log("Las empanadas son buenas");
+        
     }
 
     private void Update()
@@ -158,6 +165,7 @@ public class QuestManager : MonoBehaviour
         else
         {
             ChangeQuestState(id, QuestState.CAN_FINISH);
+            Debug.Log("Mision casi finalizada xddd");
         }
     }
 
@@ -190,7 +198,7 @@ public class QuestManager : MonoBehaviour
 
         //Create a quest map
         Dictionary<string, Quest> idToQuestMap = new Dictionary<string, Quest>();
-
+        
         foreach(QuestInfoSO questInfo in allQuests)
         {
             Debug.Log("Porque #@$% no funciona");
@@ -258,6 +266,7 @@ public class QuestManager : MonoBehaviour
             //otherwise initialize a new quest
             else
             {
+                Debug.Log("creando misiones");
                 quest = new Quest(questInfo);
             }
         }
