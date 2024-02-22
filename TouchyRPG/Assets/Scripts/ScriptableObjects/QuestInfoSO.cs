@@ -7,6 +7,7 @@ using UnityEngine;
 public class QuestInfoSO : ScriptableObject
 {
     [field: SerializeField] public string id { get; private set; }
+   
 
     //ensure the id is always the name of the ScriptableObject
     private void OnValidate()

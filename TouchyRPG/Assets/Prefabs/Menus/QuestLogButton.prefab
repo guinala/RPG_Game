@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6538079765983483414}
   - component: {fileID: 3661224743430745039}
   - component: {fileID: 1645513615823720640}
+  - component: {fileID: 4553115257858513499}
   m_Layer: 5
   m_Name: QuestLogButton
   m_TagString: Untagged
@@ -34,11 +35,11 @@ RectTransform:
   - {fileID: 6266915555064545201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 275, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 275, y: 30}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6538079765983483414
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -121,6 +122,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4553115257858513499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201802375648686552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34283eeb126f68d47ab6e35d529446ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1800895622493458629
 GameObject:
   m_ObjectHideFlags: 0
