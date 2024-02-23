@@ -59,7 +59,6 @@ public class QuestPoint : MonoBehaviour
         //GameEventManager.instance.inputEvents.onSubmitPressed -= OnSubmitPressed;
     }
 
-
     private void StartQuest(string id)
     {
         Debug.Log("Amo Unity y a " + id + "(Sarcasmo)");
@@ -97,6 +96,7 @@ public class QuestPoint : MonoBehaviour
         //only update the quest state if this point has the corresponding quest
         if (quest.info.id.Equals(questID))
         {
+            Debug.Log("Hola me llamo Manolo");
             currentQuestState = quest.state;
             questIcon.SetState(currentQuestState, startPoint, finishPoint);
         }
