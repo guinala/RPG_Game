@@ -1,72 +1,104 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.EventSystems;
 
 public class QuestLogUI : MonoBehaviour
 {
-    [SerializeField] private GameObject contentPanel;
-
+    [Header("Components")]
+    [SerializeField] private GameObject contentParent;
     [SerializeField] private QuestLogScrollingList scrollingList;
-
     [SerializeField] private TextMeshProUGUI questDisplayNameText;
-
     [SerializeField] private TextMeshProUGUI questStatusText;
-
     [SerializeField] private TextMeshProUGUI goldRewardsText;
-
-    [SerializeField] private TextMeshProUGUI experienceRewardText;
-
+    [SerializeField] private TextMeshProUGUI experienceRewardsText;
     [SerializeField] private TextMeshProUGUI levelRequirementsText;
-
     [SerializeField] private TextMeshProUGUI questRequirementsText;
 
     private Button firstSelectedButton;
-    
 
     private void OnEnable()
     {
+        GameEventManager.instance.inputEvents.onQuestLogTogglePressed += QuestLogTogglePressed;
         GameEventManager.instance.questEvents.onQuestStateChange += QuestStateChange;
     }
 
     private void OnDisable()
     {
+        GameEventManager.instance.inputEvents.onQuestLogTogglePressed -= QuestLogTogglePressed;
         GameEventManager.instance.questEvents.onQuestStateChange -= QuestStateChange;
     }
 
-    private void QuestStateChange(Quest quest)
+    private void QuestLogTogglePressed()
     {
-        //add button to the scrolling list if its not already there
-        QuestLogButton questLogButton = scrollingList.CreateButtonIfNotExists(quest, () => { SetQuestLogInfo(quest); });
-
-
-        //Initiliaze the first selected button if not already set so there is always a button selected in the top
-        if(questLogButton == null)
+        Debug.Log("!!!!!");
+        if (contentParent.activeInHierarchy)
         {
-            firstSelectedButton = questLogButton.button;
+            HideUI();
+        }
+        else
+        {
+            ShowUI();
+        }
+    }
+
+    private void ShowUI()
+    {
+        contentParent.SetActive(true);
+        GameEventManager.instance.playerEvents.DisablePlayerMovement();
+        // note - this needs to happen after the content parent is set active,
+        // or else the onSelectAction won't work as expected
+        if (firstSelectedButton != null)
+        {
             firstSelectedButton.Select();
         }
     }
 
-    private void SetQuestLogInfo(Quest quest)
+    private void HideUI()
     {
-        //quest name
-        questDisplayNameText.text = quest.info.displayName;
+        contentParent.SetActive(false);
+        GameEventManager.instance.playerEvents.EnablePlayerMovement();
+        EventSystem.current.SetSelectedGameObject(null);
+    }
 
-        //Status
+    private void QuestStateChange(Quest quest)
+    {
+        // add the button to the scrolling list if not already added
+        QuestLogButton questLogButton = scrollingList.CreateButtonIfNotExists(quest, () => {
+            SetQuestLogInfo(quest);
+        });
 
-        //Level Requirements
-        levelRequirementsText.text = "Level Required: " + quest.info.levelRequired;
-        questRequirementsText.text = "";
-
-        foreach(QuestInfoSO questPrerequisitesInfo in quest.info.questPrerequisites)
+        // initialize the first selected button if not already so that it's
+        // always the top button
+        if (firstSelectedButton == null)
         {
-            questRequirementsText.text += questPrerequisitesInfo.displayName + "\n";
+            firstSelectedButton = questLogButton.button;
         }
 
-        //Rewards
-        goldRewardsText.text = "Gold: " + quest.info.goldReward;
-        experienceRewardText.text = "Exp: " + quest.info.expReward;
+        // set the button color based on quest state
+        questLogButton.SetState(quest.state);
+    }
+
+    private void SetQuestLogInfo(Quest quest)
+    {
+        // quest name
+        questDisplayNameText.text = quest.info.displayName;
+
+        // status
+        questStatusText.text = quest.GetFullStatusText();
+
+        // requirements
+        levelRequirementsText.text = "Level " + quest.info.levelRequired;
+        questRequirementsText.text = "";
+        foreach (QuestInfoSO prerequisiteQuestInfo in quest.info.questPrerequisites)
+        {
+            questRequirementsText.text += prerequisiteQuestInfo.displayName + "\n";
+        }
+
+        // rewards
+        goldRewardsText.text = quest.info.goldReward + " Gold";
+        experienceRewardsText.text = quest.info.expReward + " XP";
     }
 }

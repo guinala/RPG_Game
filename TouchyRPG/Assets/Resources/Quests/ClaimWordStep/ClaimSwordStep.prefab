@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14001032b036b4e45b240e2e92988820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _object: Old Sword

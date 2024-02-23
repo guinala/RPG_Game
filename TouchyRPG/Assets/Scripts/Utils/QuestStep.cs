@@ -31,9 +31,9 @@ public abstract class QuestStep : MonoBehaviour
         }
     }
 
-    protected void ChangeState(string newState)
+    protected void ChangeState(string newState, string newStatus)
     {
-        GameEventManager.instance.questEvents.QuestStepStateChange(questId, stepIndex, new QuestStepState(newState));
+        GameEventManager.instance.questEvents.QuestStepStateChange(questId, stepIndex, new QuestStepState(newState, newStatus));
     }
 
     protected abstract void SetQuestStepState(string state);

@@ -413,6 +413,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b88848bd-0d2c-4e07-9db0-e2721a93fbb6
     m_ActionName: PlayerControls/Interact[/Keyboard/e,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2264911808897756396}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnQuest
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2c29db6e-61c9-42fb-a715-cb025da084bd
+    m_ActionName: PlayerControls/QuestLogButton[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerControls
@@ -500,5 +516,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onShoppingState:
+    m_PersistentCalls:
+      m_Calls: []
+  onMissionState:
     m_PersistentCalls:
       m_Calls: []

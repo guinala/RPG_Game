@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,6 +23,18 @@ public class PlayerController : MonoBehaviour
     public void OnMovement(InputAction.CallbackContext value)
     {
         _movementInput = value.ReadValue<Vector2>();
+    }
+
+    public void OnQuest(InputAction.CallbackContext value)
+    {
+        Debug.Log("Entrando en seccion critica");
+     
+        Debug.Log("NAH ID WIN");
+        if (value.started)
+        {
+            GameEventManager.instance.inputEvents.QuestLogTogglePressed();
+        }
+        
     }
 
 }

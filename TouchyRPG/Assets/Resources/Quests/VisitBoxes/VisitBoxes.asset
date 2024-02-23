@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VisitBoxes
   m_EditorClassIdentifier: 
   <id>k__BackingField: VisitBoxes
-  displayName: 
+  displayName: Visit the Boxes
   initialConversation: 0
   endConversation: 0
   conversation_initial: {fileID: 0}

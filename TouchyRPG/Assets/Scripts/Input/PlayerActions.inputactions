@@ -11,7 +11,8 @@
                     "id": "362c46b0-27a1-4020-9b09-a3a3f35297b5",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Interact",
@@ -19,7 +20,17 @@
                     "id": "b88848bd-0d2c-4e07-9db0-e2721a93fbb6",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "QuestLogButton",
+                    "type": "Button",
+                    "id": "2c29db6e-61c9-42fb-a715-cb025da084bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -108,6 +119,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a7ab5b3-3fcf-49f1-ac45-1ff174c9610b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "QuestLogButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
