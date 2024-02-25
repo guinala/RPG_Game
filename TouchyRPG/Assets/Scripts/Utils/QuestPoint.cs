@@ -26,6 +26,10 @@ public class QuestPoint : MonoBehaviour
     [SerializeField] private bool startPoint = true;
     [SerializeField] private bool finishPoint = true;
 
+    public QuestInfoSO getQuest()
+    {
+        return questInfoForPoint;
+    }
 
     private void Awake()
     {
@@ -101,6 +105,16 @@ public class QuestPoint : MonoBehaviour
             questIcon.SetState(currentQuestState, startPoint, finishPoint);
         }
     }
+
+    public void Reload(Quest quest)
+    {
+        Debug.Log("Voy a recargar");
+        if (quest.info.id.Equals(questID))
+        {
+            QuestStateChange(quest);
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -44942,7 +44942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7489097654403675362}
   - component: {fileID: 6915572441122478285}
-  - component: {fileID: 4632452107318407352}
   - component: {fileID: 1294917995310037931}
   - component: {fileID: 7489097654403675363}
   m_Layer: 0
@@ -45029,14 +45028,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e4712878a8362b46a544935f80fa835, type: 3}
---- !u!81 &4632452107318407352
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116978941771635135}
-  m_Enabled: 1
 --- !u!20 &6915572441122478285
 Camera:
   m_ObjectHideFlags: 0

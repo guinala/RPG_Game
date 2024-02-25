@@ -9,6 +9,7 @@ public class QuestManager : MonoBehaviour
 
     private static bool firstTime = false;
     private Dictionary<string, Quest> questMap;
+    private string _actualScene = "";
 
     //Quest Start requirements
 
@@ -19,10 +20,6 @@ public class QuestManager : MonoBehaviour
         Debug.Log("UNity es cacota");
         questMap = CreateQuestMap();
         Debug.Log("Unity es caca");
-        if(loadQuestState == false)
-        {
-            loadQuestState = true;
-        }
     }
 
     private void Start()
@@ -133,6 +130,55 @@ public class QuestManager : MonoBehaviour
             {
                 Debug.Log("Mision pued ehaverse");
                 ChangeQuestState(quest.info.id, QuestState.CAN_START);
+            }
+        }
+
+        Debug.Log("La escena actual es: " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
+        if(_actualScene == "" || _actualScene != UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
+        {
+            _actualScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            if(_actualScene != "MainMenu" && _actualScene != "Managers" && _actualScene != "Combat")
+            {
+                ReloadStatePoints();
+            }
+            
+        }
+    }
+
+    private void ReloadStatePoints()
+    {
+        GameObject NPC = GameObject.Find("NPC");
+        Transform t;
+        GameObject point;
+
+        //Loads all QuestInfoSO Scriptable Objects from the Assets/Resources/Quests folder
+        QuestInfoSO[] allQuests = Resources.LoadAll<QuestInfoSO>("Quests");
+
+        if (NPC != null)
+        {
+            Debug.Log("He encontrado NPC");
+            t = NPC.transform;
+            for(int i = 0; i < t.childCount; i++)
+            {
+                point = t.GetChild(i).gameObject;
+                Debug.Log(point.name);
+                QuestPoint questPoint = point.GetComponentInChildren<QuestPoint>();
+                if(questPoint != null)
+                {
+                    Debug.Log("He encontrado a Sensei");
+                    QuestInfoSO q = questPoint.getQuest();
+                    foreach(QuestInfoSO quest in allQuests)
+                    {
+                        if(quest.id == q.id)
+                        {
+                            Debug.Log("He encontrado la mision a cambiar");
+                            Quest questReload = GetQuestById(quest.id);
+                            questPoint.Reload(questReload);
+                        }
+                    }
+                   
+                }
             }
         }
     }

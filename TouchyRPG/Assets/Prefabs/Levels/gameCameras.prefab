@@ -110,10 +110,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 56.676323, y: 32.061848}
-      - {x: -17.95538, y: 31.85651}
-      - {x: -18.652925, y: -10.191224}
-      - {x: 57.378548, y: -9.910538}
+    - - {x: 7.292775, y: 3.3923705}
+      - {x: -11.651096, y: 3.6373386}
+      - {x: -11.898338, y: -12.292653}
+      - {x: 7.544697, y: -12.1620655}
   m_UseDelaunayMesh: 0
 --- !u!1 &6610841998358466680
 GameObject:
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 9.31
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 3151334337445612474}
   - component: {fileID: 5409129596501838467}
   - component: {fileID: 8793971281048486057}
+  - component: {fileID: 3143833059195260498}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -335,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 7668953956066337469}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.506515, y: -0.79489946, z: -10}
+  m_LocalPosition: {x: -0.5129006, y: -3.557609, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -376,7 +377,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.31
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -454,3 +455,16 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!114 &3143833059195260498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668953956066337469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 8688115897573520899, guid: 1526ea7982f9cfd4a9ed083eec6d81e6, type: 3}

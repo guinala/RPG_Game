@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEditor.Timeline.TimelinePlaybackControls;
+using FMOD.Studio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,10 +15,20 @@ public class PlayerController : MonoBehaviour
     // Private
     private Vector2 _movementInput;
 
+    //Audio
+    private EventInstance _footsteps;
+
+
+    private void Start()
+    {
+        _footsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.footsteps);
+    }
+    
 
     private void FixedUpdate()
     {
         rigidbody.velocity = _movementInput * speed;
+        UpdateSound();
     }
 
     public void OnMovement(InputAction.CallbackContext value)
@@ -35,6 +46,27 @@ public class PlayerController : MonoBehaviour
             GameEventManager.instance.inputEvents.QuestLogTogglePressed();
         }
         
+    }
+
+    public void UpdateSound()
+    {
+        if(rigidbody.velocity.magnitude > 0.1f)
+        {
+           PLAYBACK_STATE state;
+            _footsteps.getPlaybackState(out state);
+
+            if (state.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                _footsteps.start();
+            }
+        }
+        //otherwise, stop the sound
+        else
+        {
+            _footsteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
+       
+
     }
 
 }

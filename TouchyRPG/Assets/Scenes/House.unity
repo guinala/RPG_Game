@@ -2206,6 +2206,7 @@ GameObject:
   - component: {fileID: 1117603639}
   - component: {fileID: 1117603637}
   - component: {fileID: 1117603638}
+  - component: {fileID: 1117603641}
   m_Layer: 7
   m_Name: Sword
   m_TagString: Untagged
@@ -2327,6 +2328,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117603641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117603636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1533010133
+      Data2: 1216415734
+      Data3: -2303309
+      Data4: 1935728462
+    Path: event:/SFX/Sword/SwordIdle
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.76
+  OverrideMaxDistance: 5
 --- !u!1001 &1299197832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2338,50 +2370,6 @@ PrefabInstance:
     - target: {fileID: 556689109249783594, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
       propertyPath: m_Name
       value: gameCameras
-      objectReference: {fileID: 0}
-    - target: {fileID: 872732839238946784, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.85148764
-      objectReference: {fileID: 0}
-    - target: {fileID: 872732839238946784, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.9436302
-      objectReference: {fileID: 0}
-    - target: {fileID: 3750094659200803791, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: orthographic size
-      value: 9.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 7.292775
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 3.3923705
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -11.651096
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 3.6373386
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: -11.898338
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -12.292653
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 7.544697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -12.1620655
       objectReference: {fileID: 0}
     - target: {fileID: 7231333765678871261, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
       propertyPath: m_LocalPosition.x
