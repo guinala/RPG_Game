@@ -14,6 +14,8 @@ public class SceneLoader : MonoBehaviour
     [Header("Broadcasting events")]
     public LoadSceneRequestGameEvent loadSceneEvent;
 
+    [SerializeField] private MusicArea musicArea;
+
     public void LoadScene()
     {
         if (this.levelEntrance != null && this.playerPath != null)
@@ -25,5 +27,9 @@ public class SceneLoader : MonoBehaviour
         );
 
         this.loadSceneEvent.Raise(request);
+
+     
+        AudioManager.instance.setMusicArea(musicArea);
+        
     }
 }

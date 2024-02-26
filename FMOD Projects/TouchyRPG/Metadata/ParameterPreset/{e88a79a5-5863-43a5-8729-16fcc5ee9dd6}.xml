@@ -19,8 +19,8 @@
 			<value>2</value>
 		</property>
 		<property name="enumerationLabels">
-			<value>AreaTown</value>
-			<value>AreaForest</value>
+			<value>MainMenu</value>
+			<value>Town</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

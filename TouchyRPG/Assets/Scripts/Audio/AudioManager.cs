@@ -6,11 +6,32 @@ using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Volume")]
+    [Range(0, 1)]
+    public float masterVolume = 1;
+
+    [Range(0, 1)]
+    public float musicVolume = 1;
+
+    [Range(0, 1)]
+    public float sfxVolume = 1;
+
+    [Range(0, 1)]
+    public float ambientVolume = 1;
+
+    private Bus masterBus;
+    private Bus musicBus;
+    private Bus sfxBus;
+    private Bus ambientBus;
+
+
+
+
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
 
     private EventInstance _ambientInstanceEvent;
-    private EventInstance _musicMenuInstanceEvent;
+    private EventInstance _musicInstanceEvent;
     public static AudioManager instance { get; private set; }
 
     private void Awake()
@@ -23,6 +44,11 @@ public class AudioManager : MonoBehaviour
         instance = this;
         eventInstances = new List<EventInstance>();
         eventEmitters = new List<StudioEventEmitter>();
+
+        masterBus = RuntimeManager.GetBus("bus:/");
+        musicBus = RuntimeManager.GetBus("bus:/Musics");
+        sfxBus = RuntimeManager.GetBus("bus:/SFX");
+        ambientBus = RuntimeManager.GetBus("bus:/Ambience");
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
@@ -42,10 +68,23 @@ public class AudioManager : MonoBehaviour
         _ambientInstanceEvent.start();
     }
 
+    private void Update()
+    {
+        masterBus.setVolume(masterVolume);
+        musicBus.setVolume(musicVolume);
+        sfxBus.setVolume(sfxVolume);
+        ambientBus.setVolume(ambientVolume);
+    }
+
+    public void setMusicArea(MusicArea Area)
+    {
+        _musicInstanceEvent.setParameterByName("Area", (float)Area);
+    }
+
     private void InitializeMusicMenu(EventReference eventReference)
     {
-        _musicMenuInstanceEvent = CreateInstance(eventReference);
-        _musicMenuInstanceEvent.start();
+        _musicInstanceEvent = CreateInstance(eventReference);
+        _musicInstanceEvent.start();
     }
 
     public void SetAmbienceParameter(string parameterName, float parameterValue)
