@@ -662,11 +662,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ambience>k__BackingField:
     Guid:
-      Data1: 373415735
-      Data2: 1259897754
-      Data3: -1884057172
-      Data4: 450580407
+      Data1: 1361396712
+      Data2: 1214036484
+      Data3: 1385075585
+      Data4: 283408095
     Path: event:/Ambient/Wind
+  <musicMenu>k__BackingField:
+    Guid:
+      Data1: -34600011
+      Data2: 1334092634
+      Data3: 988245134
+      Data4: 1218706143
+    Path: event:/Music/MainMenuMusic
   <footsteps>k__BackingField:
     Guid:
       Data1: -52651255

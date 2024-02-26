@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     private List<StudioEventEmitter> eventEmitters;
 
     private EventInstance _ambientInstanceEvent;
+    private EventInstance _musicMenuInstanceEvent;
     public static AudioManager instance { get; private set; }
 
     private void Awake()
@@ -32,6 +33,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         InitializeAmbient(FMODEvents.instance.ambience);
+        InitializeMusicMenu(FMODEvents.instance.musicMenu);
     }
 
     private void InitializeAmbient(EventReference eventReference)
@@ -40,11 +42,28 @@ public class AudioManager : MonoBehaviour
         _ambientInstanceEvent.start();
     }
 
+    private void InitializeMusicMenu(EventReference eventReference)
+    {
+        _musicMenuInstanceEvent = CreateInstance(eventReference);
+        _musicMenuInstanceEvent.start();
+    }
+
     public void SetAmbienceParameter(string parameterName, float parameterValue)
     {
         
         Debug.Log("Cambiando parámetro a " + parameterValue);
-        _ambientInstanceEvent.setParameterByName(parameterName, parameterValue);
+        if(parameterName == "wind-intensity")
+        {
+            Debug.Log("Uso variable");
+            _ambientInstanceEvent.setParameterByName(parameterName, parameterValue);
+        }
+           
+        else
+        {
+            Debug.Log("No uso variable");
+            _ambientInstanceEvent.setParameterByName("wind-intensity", parameterValue);
+        }
+            
     }
 
     public EventInstance CreateInstance (EventReference eventReference)
