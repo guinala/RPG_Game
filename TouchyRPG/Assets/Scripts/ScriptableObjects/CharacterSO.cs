@@ -5,4 +5,5 @@ public class CharacterSO : ScriptableObject
 {
     public string fullname;
     public Sprite portrait;
+    public string audioID;
 }

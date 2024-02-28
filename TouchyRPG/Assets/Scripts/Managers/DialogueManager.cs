@@ -11,11 +11,14 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onConversationStarted;
     public UnityEvent onConversationEnded;
 
+    
+
     private Queue<Sentence> sentences;
 
     private void Start()
     {
         this.sentences = new Queue<Sentence>();
+        dialogueUI.InitializeAudioDictionary();
     }
 
     public void StartConversation(ConversationSO conversation)
@@ -58,7 +61,8 @@ public class DialogueManager : MonoBehaviour
         var sentence = this.sentences.Dequeue();
         this.dialogueUI.DisplaySentence(
             characterName: sentence.character.fullname,
-            sentenceText: sentence.text
+            sentenceText: sentence.text,
+            audioID: sentence.character.audioID
         );
     }
 

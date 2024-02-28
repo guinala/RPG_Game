@@ -1,0 +1,326 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.15f1 (b58023a2b463) revision 11894819'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'es' Physical Memory: 7886 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Usuario/Desktop/RPG_Game/TouchyRPG
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+65273
+Successfully changed project path to: C:/Users/Usuario/Desktop/RPG_Game/TouchyRPG
+C:/Users/Usuario/Desktop/RPG_Game/TouchyRPG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24988] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1451886575 [EditorId] 1451886575 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-52TGCLKN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24988] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1451886575 [EditorId] 1451886575 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-52TGCLKN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 69.28 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.15f1 (b58023a2b463)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Usuario/Desktop/RPG_Game/TouchyRPG/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     3943 MB
+    Driver:   31.0.101.4255
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013650 seconds.
+- Loaded All Assemblies, in  0.701 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 440 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.042 seconds
+Domain Reload Profiling: 1741ms
+	BeginReloadAssembly (231ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (290ms)
+		LoadAssemblies (227ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (287ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (255ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1043ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (939ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (659ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (159ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.885 seconds
+Refreshing native plugins compatible for Editor in 18.51 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.903 seconds
+Domain Reload Profiling: 1778ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (597ms)
+		LoadAssemblies (399ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (244ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (904ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (627ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (444ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 15.93 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5094 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 144 unused Assets / (177.8 KB). Loaded Objects now: 5501.
+Memory consumption went from 176.0 MB to 175.8 MB.
+Total: 5.463800 ms (FindLiveObjects: 0.489900 ms CreateObjectMapping: 0.378200 ms MarkObjects: 4.331200 ms  DeleteObjects: 0.262700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1058858.989300 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/3_2_raw.wav
+  artifactKey: Guid(9874fc443f198d744804968c087d716a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/3_2_raw.wav using Guid(9874fc443f198d744804968c087d716a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74df417bf0f28db1978a3c913946bb4f') in 0.171849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/3_8.wav
+  artifactKey: Guid(c6b81e40662c9524191cf862d416b7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/3_8.wav using Guid(c6b81e40662c9524191cf862d416b7de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14af13cc543e7f9abc33c01c3d0a02bb') in 0.074653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/3_7_raw.wav
+  artifactKey: Guid(a0056fcaf1c55b643a700bc79d4a6369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/3_7_raw.wav using Guid(a0056fcaf1c55b643a700bc79d4a6369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177c4504d98f12029e1d141a7e2c7369') in 0.078979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/3_7_low.wav
+  artifactKey: Guid(e93801aaeaba2b64795a1444e2a30bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/3_7_low.wav using Guid(e93801aaeaba2b64795a1444e2a30bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d9d5e283c404ee301318e46e460fbb') in 0.077187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/3_5_low.wav
+  artifactKey: Guid(3a77ffcb44a04304d9ac5e7c9cb0ffe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/3_5_low.wav using Guid(3a77ffcb44a04304d9ac5e7c9cb0ffe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c997b287c39d9d58d6f78ed23051d42f') in 0.096767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 44.156925 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_5_raw.wav
+  artifactKey: Guid(5e8fd2e704031d54f86277b92c9f03d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_5_raw.wav using Guid(5e8fd2e704031d54f86277b92c9f03d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03ab44b6cf392602c84f655689f3085') in 0.057035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_2.wav
+  artifactKey: Guid(5903bc11b4d73c84d845d03195b729ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_2.wav using Guid(5903bc11b4d73c84d845d03195b729ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f004e8ba8bd1a2b7ff7c611bf11f3b') in 0.067482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000605 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/5_4_raw.wav
+  artifactKey: Guid(729e4468b6201a148b1e617c12338acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/5_4_raw.wav using Guid(729e4468b6201a148b1e617c12338acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef319c076c058daaf510be150939051f') in 0.076091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_5.wav
+  artifactKey: Guid(abf62d3b21b2c0049a52bbc447ad7352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_5.wav using Guid(abf62d3b21b2c0049a52bbc447ad7352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54edf256721fca2b1db72afe341bdff2') in 0.174152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_5_raw.wav
+  artifactKey: Guid(05462f1ad33be3f4cae04c4acee5291d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_5_raw.wav using Guid(05462f1ad33be3f4cae04c4acee5291d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c516449104149a91dca7d1bd78f7941') in 0.112443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_6.wav
+  artifactKey: Guid(e5867ea8ec5a47a459f98c7188381b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_6.wav using Guid(e5867ea8ec5a47a459f98c7188381b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a082b04cee8e70333b20517244ef7e4') in 0.062647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.062249 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_7.wav
+  artifactKey: Guid(bb1016c444e0ac64bb001a3f087652d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/5_7.wav using Guid(bb1016c444e0ac64bb001a3f087652d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eebc23f6395adc480362741816ec5135') in 0.058085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 18.180761 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/4_2_low.wav
+  artifactKey: Guid(889d778f40fa0744080af800d3032309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/4_2_low.wav using Guid(889d778f40fa0744080af800d3032309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5333c6fd2d4a4de9c3c743d2267cfdb1') in 0.049848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_3_raw.wav
+  artifactKey: Guid(1a15fc5b119cf894192b02d7a561a2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_3_raw.wav using Guid(1a15fc5b119cf894192b02d7a561a2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a84b7d8d64d743d223eb956508f6cb2') in 0.057354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/4_4.wav
+  artifactKey: Guid(78e69ef41e704a048a083944ebe600ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/4_4.wav using Guid(78e69ef41e704a048a083944ebe600ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6585528f9c279e4fdc47424668af4d30') in 0.080057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_6_raw.wav
+  artifactKey: Guid(cd123ab011a2bb14caca58f47049e720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/4_6_raw.wav using Guid(cd123ab011a2bb14caca58f47049e720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac33343c2e7229cb7596fc768305ebb') in 0.080856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.635698 seconds.
+  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/5_8_raw.wav
+  artifactKey: Guid(43f042aee571428478e09fb0e725fe4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/5_8_raw.wav using Guid(43f042aee571428478e09fb0e725fe4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc64090a8e7241b615550644db87f659') in 0.052709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

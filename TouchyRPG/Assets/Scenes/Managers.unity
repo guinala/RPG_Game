@@ -431,6 +431,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49169d5f012001418222bc2961631cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterVolume: 1
+  musicVolume: 1
+  sfxVolume: 1
+  ambientVolume: 1
 --- !u!1 &431216570
 GameObject:
   m_ObjectHideFlags: 0

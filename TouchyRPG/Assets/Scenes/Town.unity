@@ -5061,6 +5061,152 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4825503116747883525, guid: 971ef03396905428f8424d74c31fb8e4, type: 3}
   m_PrefabInstance: {fileID: 753508808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &770258666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770258667}
+  - component: {fileID: 770258671}
+  - component: {fileID: 770258670}
+  - component: {fileID: 770258669}
+  - component: {fileID: 770258668}
+  m_Layer: 7
+  m_Name: ExitFromForestPath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770258667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770258666}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 56.34, y: -1.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5611072526940910503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770258668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770258666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b334de5d594ad04eb644860d9f29b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameterName: wind-intensity
+  parameterValue: 1
+--- !u!114 &770258669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770258666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ac0aeb25beb5243ac39647713f8b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: {fileID: 11400000, guid: b7986c0d35ff7e446982520194df71f3, type: 2}
+  levelEntrance: {fileID: 11400000, guid: dcdcbefc78275464997c073a046536bf, type: 2}
+  loadingScreen: 1
+  playerPath: {fileID: 11400000, guid: 40d0e6dd40d1ad249a3f30ea6eab61ab, type: 2}
+  loadSceneEvent: {fileID: 11400000, guid: b2de0437fbfb94248988897b863348ea, type: 2}
+  musicArea: 0
+--- !u!114 &770258670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770258666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf6ce9d093996541935eb4a760cd44a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validTag: Player
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 770258669}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!61 &770258671
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770258666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1455555, y: 0.04368335}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0763206, y: 1.942933}
+  m_EdgeRadius: 0
 --- !u!1001 &779566818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46180,11 +46326,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5246258016127066005, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1830511484}
+    - targetCorrespondingSourceObject: {fileID: 8529599803066787498, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 770258667}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
 --- !u!4 &5611072526940910502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5246258016127066005, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+  m_PrefabInstance: {fileID: 5611072526940910501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5611072526940910503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8529599803066787498, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
   m_PrefabInstance: {fileID: 5611072526940910501}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7778296308071594754
@@ -46201,11 +46355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872732839238946784, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.69597
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 872732839238946784, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8379512
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 6075141937025429021, guid: c8ae26415d0b9754f84c26691f3484fc, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
