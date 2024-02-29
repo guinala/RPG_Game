@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum MusicArea
 {
+    NONE = -1,
     MAIN_MENU = 0,
     TOWN = 1
 }

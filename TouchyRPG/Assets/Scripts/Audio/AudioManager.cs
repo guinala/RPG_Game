@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using static UnityEngine.ParticleSystem;
 
 public class AudioManager : MonoBehaviour
 {
@@ -78,7 +79,21 @@ public class AudioManager : MonoBehaviour
 
     public void setMusicArea(MusicArea Area)
     {
-        _musicInstanceEvent.setParameterByName("Area", (float)Area);
+        FMOD.Studio.PLAYBACK_STATE playbackState;
+        _musicInstanceEvent.getPlaybackState(out playbackState);
+
+        if ((float) Area != -1)
+        {
+            if(playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                _musicInstanceEvent.start();
+            }
+            _musicInstanceEvent.setParameterByName("Area", (float)Area);
+            
+        }
+                
+        else
+            _musicInstanceEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     private void InitializeMusicMenu(EventReference eventReference)
