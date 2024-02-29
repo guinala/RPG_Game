@@ -151,7 +151,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TouchyRPG/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638446561743484962
+  lastModified: 638448288708861555
   FileSizes:
   - Name: Desktop
     Value: 38464
@@ -185,7 +185,7 @@ MonoBehaviour:
   - {fileID: 1777025871783100800}
   StringsBanks:
   - {fileID: 6889689261737373256}
-  cacheTime: 638446561743484962
+  cacheTime: 638448289683769230
   cacheVersion: 131609
 --- !u!114 &1777025871783100800
 MonoBehaviour:
@@ -202,7 +202,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638446561714293146
+  lastModified: 638448289683749096
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -222,7 +222,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Level.bank
   Name: Level
   StudioPath: bank:/Level
-  lastModified: 638446561713872231
+  lastModified: 638448288705871478
   FileSizes:
   - Name: Desktop
     Value: 149536
@@ -293,10 +293,10 @@ MonoBehaviour:
   Path: ../FMOD Projects/TouchyRPG/Build/Desktop/MusicMenu.bank
   Name: MusicMenu
   StudioPath: bank:/MusicMenu
-  lastModified: 638446561742091201
+  lastModified: 638448288707413459
   FileSizes:
   - Name: Desktop
-    Value: 3315808
+    Value: 3315840
   Exists: 1
 --- !u!114 &6889689261737373256
 MonoBehaviour:
@@ -313,7 +313,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638446561714328341
+  lastModified: 638448289683769230
   FileSizes:
   - Name: Desktop
     Value: 1332

@@ -47099,7 +47099,7 @@ MonoBehaviour:
   loadingScreen: 1
   playerPath: {fileID: 11400000, guid: 40d0e6dd40d1ad249a3f30ea6eab61ab, type: 2}
   loadSceneEvent: {fileID: 11400000, guid: b2de0437fbfb94248988897b863348ea, type: 2}
-  musicArea: 1
+  musicArea: -1
 --- !u!1001 &1862496266
 PrefabInstance:
   m_ObjectHideFlags: 0
