@@ -16,6 +16,7 @@ public class TextDialogue : MonoBehaviour
     public PlayableDirector director;
     public AudioClip sound;
     public AudioSource audioMan;
+    private bool paused = false;
 
     [SerializeField]
     private Image border;
@@ -38,13 +39,13 @@ public class TextDialogue : MonoBehaviour
 
     public bool directorPaused()
     {
-        //return director.timelinePaused();
-        return true;
+        return paused;
     }
 
     public void PauseDirector()
     {
-        //director.Freeze();
+        director.Pause();
+        paused = true;
     }
 
     public void TypeVoice(float pitch, AudioClip voice)
@@ -67,7 +68,8 @@ public class TextDialogue : MonoBehaviour
             m_timer = m_timer - Time.deltaTime;
             if (m_timer <= 0)
             {
-                //director.UnFreeze();
+                director.Resume();
+                paused = false;
             }
         }
         //transform.rotation = Quaternion.identity;
