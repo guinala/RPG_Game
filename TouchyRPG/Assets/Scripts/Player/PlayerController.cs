@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 using FMOD.Studio;
 
 public class PlayerController : MonoBehaviour

@@ -320,6 +320,10 @@ PrefabInstance:
       value: -11.78
       objectReference: {fileID: 0}
     - target: {fileID: 8802186367801525147, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: musicArea
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802186367801525147, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: sceneToLoad
       value: 
       objectReference: {fileID: 11400000, guid: ea06c08765a556e41a79dff7ef533af6, type: 2}

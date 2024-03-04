@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-using static UnityEditorInternal.VersionControl.ListControl;
 
 public class MissionManager : MonoBehaviour
 {

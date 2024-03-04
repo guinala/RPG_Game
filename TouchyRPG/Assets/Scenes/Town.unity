@@ -10749,7 +10749,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 323090966815413191, guid: 14b9f198395b33b499d40b57243bc649, type: 3}
       propertyPath: parameterValue
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3157236318604077618, guid: 14b9f198395b33b499d40b57243bc649, type: 3}
       propertyPath: m_Name
@@ -46320,6 +46320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entrances&Exits
       objectReference: {fileID: 0}
+    - target: {fileID: 8802186367801525147, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
+      propertyPath: musicArea
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -46452,7 +46456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 323090966815413191, guid: 14b9f198395b33b499d40b57243bc649, type: 3}
       propertyPath: parameterValue
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3157236318604077618, guid: 14b9f198395b33b499d40b57243bc649, type: 3}
       propertyPath: m_Name

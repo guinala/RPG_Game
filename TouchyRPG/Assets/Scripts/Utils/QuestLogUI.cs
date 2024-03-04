@@ -16,6 +16,7 @@ public class QuestLogUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI experienceRewardsText;
     [SerializeField] private TextMeshProUGUI levelRequirementsText;
     [SerializeField] private TextMeshProUGUI questRequirementsText;
+    [SerializeField] private Button exit; 
 
     private Button firstSelectedButton;
 
@@ -47,6 +48,7 @@ public class QuestLogUI : MonoBehaviour
     private void ShowUI()
     {
         contentParent.SetActive(true);
+        exit.gameObject.SetActive(true);
         GameEventManager.instance.playerEvents.DisablePlayerMovement();
         // note - this needs to happen after the content parent is set active,
         // or else the onSelectAction won't work as expected
@@ -59,6 +61,7 @@ public class QuestLogUI : MonoBehaviour
     private void HideUI()
     {
         contentParent.SetActive(false);
+        exit.gameObject.SetActive(false);
         GameEventManager.instance.playerEvents.EnablePlayerMovement();
         EventSystem.current.SetSelectedGameObject(null);
     }
