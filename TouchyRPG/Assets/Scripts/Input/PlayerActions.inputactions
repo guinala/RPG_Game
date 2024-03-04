@@ -132,6 +132,17 @@
                     "action": "QuestLogButton",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ac2f360-5e61-4ee3-b72f-0b06b6bb4987",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "QuestLogButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

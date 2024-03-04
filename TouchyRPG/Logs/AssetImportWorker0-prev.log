@@ -15,7 +15,7 @@ C:/Users/USUARIO/OneDrive/Escritorio/Curso Unity RPG/RPG_Game/TouchyRPG
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62907
+63545
 Successfully changed project path to: C:/Users/USUARIO/OneDrive/Escritorio/Curso Unity RPG/RPG_Game/TouchyRPG
 C:/Users/USUARIO/OneDrive/Escritorio/Curso Unity RPG/RPG_Game/TouchyRPG
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/USUARIO/OneDrive/Escritorio/Curso Unity RPG/RPG_Game/TouchyRPG
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27792] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3201534586 [EditorId] 3201534586 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3M5VI0D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2696] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3885823930 [EditorId] 3885823930 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3M5VI0D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [27792] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3201534586 [EditorId] 3201534586 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3M5VI0D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2696] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3885823930 [EditorId] 3885823930 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3M5VI0D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 31.50 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 39.34 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.15f1 (b58023a2b463)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009757 seconds.
-- Loaded All Assemblies, in  0.361 seconds
+Registered in 0.012685 seconds.
+- Loaded All Assemblies, in  0.433 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 259 ms
+Android Extension - Scanning For ADB Devices 275 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.583 seconds
-Domain Reload Profiling: 941ms
-	BeginReloadAssembly (115ms)
+- Finished resetting the current domain, in  0.628 seconds
+Domain Reload Profiling: 1059ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
+	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (113ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (127ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (138ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (123ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (168ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (583ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (628ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (528ms)
+		SetupLoadedEditorAssemblies (566ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (372ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (397ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (107ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (109ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 941ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.746 seconds
-Refreshing native plugins compatible for Editor in 28.65 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.934 seconds
+Refreshing native plugins compatible for Editor in 24.75 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +127,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.761 seconds
-Domain Reload Profiling: 1502ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.787 seconds
+Domain Reload Profiling: 1714ms
+	BeginReloadAssembly (175ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (33ms)
+	RebuildCommonClasses (38ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (502ms)
-		LoadAssemblies (392ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (652ms)
+		LoadAssemblies (482ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (166ms)
-				TypeCache.ScanAssembly (146ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (761ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (240ms)
+				TypeCache.ScanAssembly (205ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (787ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (550ms)
+		SetupLoadedEditorAssemblies (585ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (24ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (83ms)
-			ProcessInitializeOnLoadAttributes (394ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (402ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 22.71 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 25.01 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5099 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 144 unused Assets / (177.5 KB). Loaded Objects now: 5506.
-Memory consumption went from 176.2 MB to 176.0 MB.
-Total: 4.341800 ms (FindLiveObjects: 0.515200 ms CreateObjectMapping: 0.138500 ms MarkObjects: 3.383700 ms  DeleteObjects: 0.303300 ms)
+Unloading 144 unused Assets / (177.6 KB). Loaded Objects now: 5506.
+Memory consumption went from 176.4 MB to 176.2 MB.
+Total: 5.247500 ms (FindLiveObjects: 0.982300 ms CreateObjectMapping: 0.196200 ms MarkObjects: 3.791700 ms  DeleteObjects: 0.275000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,233 +184,150 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 424720.417629 seconds.
-  path: Assets/Scripts/Timeline/cl_Dialogue.cs
-  artifactKey: Guid(b3effa9f69d5b7047857e9850201f337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Timeline/cl_Dialogue.cs using Guid(b3effa9f69d5b7047857e9850201f337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe39d6af36962f06ff7596618ec84c7') in 0.002033 seconds
+  Time since last request: 429807.643286 seconds.
+  path: Assets/art/Sprites/UI/PNG/arrowBlue_left.png
+  artifactKey: Guid(9a56dea84e9089148a7716e5cbf3fd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/arrowBlue_left.png using Guid(9a56dea84e9089148a7716e5cbf3fd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83d86d63c440b20210ba0e20af567f5') in 0.072087 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 4.569125 seconds.
-  path: Assets/Scripts/Timeline/s_dialogueChar.cs
-  artifactKey: Guid(3530f05cbd5fc2f4a92940c8484fdb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Timeline/s_dialogueChar.cs using Guid(3530f05cbd5fc2f4a92940c8484fdb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b3f8225a1212318dfc0fb91db882a1') in 0.000630 seconds
+  Time since last request: 0.000032 seconds.
+  path: Assets/art/Sprites/UI/PNG/arrowBrown_left.png
+  artifactKey: Guid(a47c0ddf43489da41816c33c891252a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/arrowBrown_left.png using Guid(a47c0ddf43489da41816c33c891252a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb186e1aa47f72702465a33781689aa') in 0.027494 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.673402 seconds.
-  path: Assets/Scripts/Timeline/Tr_Dialogue.cs
-  artifactKey: Guid(7e4b627764355bf4d8f3221b390b02f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Timeline/Tr_Dialogue.cs using Guid(7e4b627764355bf4d8f3221b390b02f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5678928a86fa556223b6b715412afbfb') in 0.000591 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 170.238929 seconds.
-  path: Assets/Animations/Prueba.playable
-  artifactKey: Guid(c0d8640c20e9e004b912ad5eb7ee0be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Prueba.playable using Guid(c0d8640c20e9e004b912ad5eb7ee0be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a4e39e6fe4f2adb8fc1526d45cdc83') in 0.014154 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 659.848088 seconds.
-  path: Assets/Scripts/Timeline/asdasdasd.asset
-  artifactKey: Guid(e7edcc2ffcc69d2459df34bbbb3c9a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Timeline/asdasdasd.asset using Guid(e7edcc2ffcc69d2459df34bbbb3c9a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7181a338b0843525e3174ae7d4e5cafa') in 0.001676 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 2.993720 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_1.wav
-  artifactKey: Guid(9742e1a37de75474f88e11179b841115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_1.wav using Guid(9742e1a37de75474f88e11179b841115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba633f805885ca7b96a00e20ab63a89a') in 0.077649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_4.wav
-  artifactKey: Guid(7b85775c3707a6a4b863f61bb920a97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_4.wav using Guid(7b85775c3707a6a4b863f61bb920a97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c080e4d54a8cd0c69969d7a2ac55341d') in 0.023310 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_2.wav
-  artifactKey: Guid(02df25240932ff845aa779f7e10cfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_2.wav using Guid(02df25240932ff845aa779f7e10cfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab75644c2b77c3c3affba28afbe953c') in 0.016576 seconds
+  path: Assets/art/Sprites/Environment/atlas/atlas.png
+  artifactKey: Guid(ae2e59adf58c94839a4a49d1a41c5920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/Environment/atlas/atlas.png using Guid(ae2e59adf58c94839a4a49d1a41c5920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433e13f5983d9a1224add99d345c82e7') in 0.295197 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 103
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_7.wav
-  artifactKey: Guid(205f5238010818f43b1c6106ce7be9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_7.wav using Guid(205f5238010818f43b1c6106ce7be9b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9390e319845e15c0805dd1ace2c4a292') in 0.019072 seconds
+  Time since last request: 4.845474 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonLong_brown.png
+  artifactKey: Guid(3fe90b8d5cfb2f44e9a4822f3df7f37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonLong_brown.png using Guid(3fe90b8d5cfb2f44e9a4822f3df7f37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f94cd996aa743cbdaca2344742798f') in 0.024353 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonRound_beige.png
+  artifactKey: Guid(0c517e37052402744b047cb25bd30f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonRound_beige.png using Guid(0c517e37052402744b047cb25bd30f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3122b9713fef8d9533bfbddbda068e37') in 0.027023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonSquare_beige_pressed.png
+  artifactKey: Guid(99005dd5781d85647ab573594a63a05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonSquare_beige_pressed.png using Guid(99005dd5781d85647ab573594a63a05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b39e32b9fcb722eb527bce1cb6d72fb') in 0.022837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonRound_grey.png
+  artifactKey: Guid(9009a29ed56686f49b9a41ca790d5122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonRound_grey.png using Guid(9009a29ed56686f49b9a41ca790d5122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ae910454d212dc0af8f1ae1b7acf18') in 0.021871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonSquare_grey.png
+  artifactKey: Guid(1a6dc2382fc7048488d98f928d027537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonSquare_grey.png using Guid(1a6dc2382fc7048488d98f928d027537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfcc981f4319166fdb4f6627b8f1d5e') in 0.024315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_2_raw.wav
-  artifactKey: Guid(690d17c1386f66040aab9fc5fe5f1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_2_raw.wav using Guid(690d17c1386f66040aab9fc5fe5f1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1631d59899193e6f8422cb460db80a77') in 0.020301 seconds
+  path: Assets/art/Sprites/UI/PNG/cursorHand_beige.png
+  artifactKey: Guid(7309f38576069644fb011a50210abfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/cursorHand_beige.png using Guid(7309f38576069644fb011a50210abfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cde3b1c012f8558a874ff897e1cf2bf') in 0.026288 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/art/Sprites/UI/PNG/cursorSword_silver.png
+  artifactKey: Guid(e04d203bbd7323b49b83bcfd0dc0a8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/cursorSword_silver.png using Guid(e04d203bbd7323b49b83bcfd0dc0a8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1158030e0783844a9acff7f130f2b28f') in 0.024148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/art/Sprites/Environment/props n decorations/generic-rpg-house-inn.png
+  artifactKey: Guid(82dc1290b3c494ecf8447dfa1f9ba8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/Environment/props n decorations/generic-rpg-house-inn.png using Guid(82dc1290b3c494ecf8447dfa1f9ba8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c47ee950f06d6dee0817345b7bd60635') in 0.029607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_1_raw.wav
-  artifactKey: Guid(d26ba88ff46f8c244819d73b610b66e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_1_raw.wav using Guid(d26ba88ff46f8c244819d73b610b66e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2c7656a15c522dd9fe9a06bdc6f7aa') in 0.024171 seconds
+  path: Assets/art/Sprites/UI/generic-rpg-ui-inventario02.png
+  artifactKey: Guid(e0e473c317a184c42a2de67be956da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/generic-rpg-ui-inventario02.png using Guid(e0e473c317a184c42a2de67be956da89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e2aa1762641d26a7ad82e899c04457') in 0.028767 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_3_raw.wav
-  artifactKey: Guid(3e24d4c580172d94cbe8435c19cdccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_3_raw.wav using Guid(3e24d4c580172d94cbe8435c19cdccc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b42adee2d5bd5babf6d70e4551462d') in 0.021483 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/art/Sprites/UI/generic-rpg-ui-inventario03.png
+  artifactKey: Guid(2e310a165df624bef8cb33659d09c3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/generic-rpg-ui-inventario03.png using Guid(2e310a165df624bef8cb33659d09c3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b85dd678a44655a2c6896fd3ac66332') in 0.028000 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_4.wav
-  artifactKey: Guid(6f35b3130ca98364b9dfb7eefe046b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_4.wav using Guid(6f35b3130ca98364b9dfb7eefe046b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55edebe289b00d7afbe77473b816f283') in 0.021071 seconds
+  Time since last request: 0.000024 seconds.
+  path: Assets/art/Sprites/Environment/props n decorations/generic-rpg-treasure-closed.png
+  artifactKey: Guid(498caa3db4db045bbaa0f1f9f5e17703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/Environment/props n decorations/generic-rpg-treasure-closed.png using Guid(498caa3db4db045bbaa0f1f9f5e17703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0cb497f463331df384b4821102b2bf') in 0.033195 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_5_raw.wav
-  artifactKey: Guid(5e8fd2e704031d54f86277b92c9f03d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_5_raw.wav using Guid(5e8fd2e704031d54f86277b92c9f03d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5728edfca60cc202bf9651995922555e') in 0.018550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/2_6_low.wav
-  artifactKey: Guid(b64ed81a5fa0c6940a4bddc691f23c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/2_6_low.wav using Guid(b64ed81a5fa0c6940a4bddc691f23c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d99bd3d9edcaf7c20cacba2454ec95') in 0.018792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/2_8_low.wav
-  artifactKey: Guid(ad89ad72f6551ac4c956032ad2e2d7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/2_8_low.wav using Guid(ad89ad72f6551ac4c956032ad2e2d7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35816390c9871f7359bf748c9a3573ab') in 0.022438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_6_raw.wav
-  artifactKey: Guid(2e6369976a33acf42a196368258be8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_6_raw.wav using Guid(2e6369976a33acf42a196368258be8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac13b1a4677771ca6ceccc198944ed2') in 0.026333 seconds
+  path: Assets/art/Sprites/UI/uipack-rpg/PNG/buttonSquare_beige.png
+  artifactKey: Guid(4df02916f96484ab38c66ce5217383ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/uipack-rpg/PNG/buttonSquare_beige.png using Guid(4df02916f96484ab38c66ce5217383ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d11e43f3c4426467124e11844492a08') in 0.022736 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_2.wav
-  artifactKey: Guid(519bb0b6ae4c7134b90000896285fc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_2.wav using Guid(519bb0b6ae4c7134b90000896285fc80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb692f87cc10c7ae9c7b9b20bbdda216') in 0.024454 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/art/Sprites/UI/uipack-rpg/PNG/buttonSquare_beige_pressed.png
+  artifactKey: Guid(34e08015320b84f4c8d915932c7fb1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/uipack-rpg/PNG/buttonSquare_beige_pressed.png using Guid(34e08015320b84f4c8d915932c7fb1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb4ecb9ce93b8d8a3c1ad9664d0612c') in 0.025544 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_8.wav
-  artifactKey: Guid(19d58c9b86f591149b5c56ceb0e1a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_8.wav using Guid(19d58c9b86f591149b5c56ceb0e1a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890a4bf0a97539f95d68ea667eca362c') in 0.022212 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/art/Sprites/UI/PNG/buttonSquare_brown_pressed.png
+  artifactKey: Guid(bb3e98ff345128f47b9b6544d2b9a294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/buttonSquare_brown_pressed.png using Guid(bb3e98ff345128f47b9b6544d2b9a294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75e8825776899af5214af7e328be697') in 0.025014 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_2_raw.wav
-  artifactKey: Guid(eddab73b4b50bc4468f715520c3f32e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_2_raw.wav using Guid(eddab73b4b50bc4468f715520c3f32e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975ca061d8af636cca34eb5aacf93ba5') in 0.023058 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_5.wav
-  artifactKey: Guid(ca3a803d25956ff4582d429efdd1c382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_5.wav using Guid(ca3a803d25956ff4582d429efdd1c382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca99d29a39c4f6ab730d441de7d15561') in 0.022802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_4_raw.wav
-  artifactKey: Guid(0bb8f1fb90207e641955d304c2cb8fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_4_raw.wav using Guid(0bb8f1fb90207e641955d304c2cb8fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3399b0df6340a7096e9c622518a084') in 0.027871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_8_raw.wav
-  artifactKey: Guid(f825402ad0db2af4fbc722a775367758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/2_8_raw.wav using Guid(f825402ad0db2af4fbc722a775367758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74606996a0cba287553bd868dc796b1a') in 0.028943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/1_2_low.wav
-  artifactKey: Guid(9062016096b9e394f9623031c8123ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/1_2_low.wav using Guid(9062016096b9e394f9623031c8123ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035a15bcea85f4bfd25b5a994315e7c1') in 0.021784 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_1.wav
-  artifactKey: Guid(a01c65f245559ca419e76ecfe6f81117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/2_1.wav using Guid(a01c65f245559ca419e76ecfe6f81117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4081c1ff9b9e302de20b0aad339e6dee') in 0.038579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/low/1_6_low.wav
-  artifactKey: Guid(2743542352c400746b605532f6923e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/low/1_6_low.wav using Guid(2743542352c400746b605532f6923e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59009d22a86911a50efca44482523206') in 0.031117 seconds
+  path: Assets/art/Sprites/UI/PNG/cursorGauntlet_blue.png
+  artifactKey: Guid(fa9510338adc3114e8f43cf56f16a33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/Sprites/UI/PNG/cursorGauntlet_blue.png using Guid(fa9510338adc3114e8f43cf56f16a33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c68e5c33a683edd651c13d0f4a0948e5') in 0.027059 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_1_raw.wav
-  artifactKey: Guid(5fd38f4f3b1a58b4ea31958192d19c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_1_raw.wav using Guid(5fd38f4f3b1a58b4ea31958192d19c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8521b3e2d2bb4336fe9adfc4731835') in 0.031296 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_6.wav
-  artifactKey: Guid(ce101063703b36042a1677f4aa7f5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/celeste_sounds/high/1_6.wav using Guid(ce101063703b36042a1677f4aa7f5d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40a1e0563d03bceafeead79317aa98f') in 0.028227 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_5_raw.wav
-  artifactKey: Guid(315135d0b835a0a44939915ad9b1d01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/art/Audio/dialogueSounds/raw_sounds/synth/1_5_raw.wav using Guid(315135d0b835a0a44939915ad9b1d01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbe53ba92dfcde618c6168e5b5ba6b1') in 0.022277 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
