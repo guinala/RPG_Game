@@ -16,9 +16,20 @@ public class QuestLogUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI experienceRewardsText;
     [SerializeField] private TextMeshProUGUI levelRequirementsText;
     [SerializeField] private TextMeshProUGUI questRequirementsText;
-    [SerializeField] private Button exit; 
+    [SerializeField] private Button exit;
+    [SerializeField] private TextMeshProUGUI fpsRate;
+    private float deltaTime = 0.0f;
 
     private Button firstSelectedButton;
+
+    private void Update()
+    {
+     
+            deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
+            float fps = 1.0f / deltaTime;
+            fpsRate.text = "FPS: " + Mathf.Ceil(fps).ToString();
+        
+    }
 
     private void OnEnable()
     {

@@ -49699,8 +49699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c245f959581c0ec4f8fdc362dcef3542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: {x: -17, y: -10}
-  max: {x: 25, y: 30}
+  min: {x: -17, y: 0}
+  max: {x: 25, y: 20}
   minDistance: 5
   lerpSpeed: 0.75
 --- !u!1660057539 &9223372036854775807
