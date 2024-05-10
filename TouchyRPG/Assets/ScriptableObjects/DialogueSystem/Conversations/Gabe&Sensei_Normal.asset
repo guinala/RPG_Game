@@ -16,10 +16,5 @@ MonoBehaviour:
   rightCharacter: {fileID: 11400000, guid: 64ddd453acb74e346a2959e97f3b8a23, type: 2}
   sentences:
   - character: {fileID: 11400000, guid: 64ddd453acb74e346a2959e97f3b8a23, type: 2}
-    text: That bees are very strong, but would you lose?
-  - character: {fileID: 11400000, guid: ac43c614334771d409bb45b786961e64, type: 2}
-    text: ...
-  - character: {fileID: 11400000, guid: 64ddd453acb74e346a2959e97f3b8a23, type: 2}
-    text: ...
-  - character: {fileID: 11400000, guid: ac43c614334771d409bb45b786961e64, type: 2}
-    text: Nah, I'd win
+    text: This is a good place to live, but that monster can make it a little dangerous.
+      It's useful to have a good training with the sword
