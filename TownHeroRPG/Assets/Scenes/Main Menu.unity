@@ -7064,6 +7064,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3110621529359650612, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_text
+      value: TOWN HERO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529359650612, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
       propertyPath: m_fontSize
       value: 100
       objectReference: {fileID: 0}
@@ -7094,6 +7098,30 @@ PrefabInstance:
     - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.topLeft.g
+      value: 0.78036785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.topRight.g
+      value: 0.78036785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.bottomLeft.g
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.bottomLeft.r
+      value: 0.8699653
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.bottomRight.g
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110621529965276869, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
+      propertyPath: m_fontColorGradient.bottomRight.r
+      value: 0.8699653
       objectReference: {fileID: 0}
     - target: {fileID: 3793872391699977580, guid: 4bc7751a625a94608ad25560d537e3fb, type: 3}
       propertyPath: m_Pivot.x
