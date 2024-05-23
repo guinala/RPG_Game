@@ -28,7 +28,7 @@ public class SceneLoader : MonoBehaviour
 
         this.loadSceneEvent.Raise(request);
 
-     
+        Debug.Log("Aquí cambio de música");
         AudioManager.instance.setMusicArea(musicArea);
         
     }

@@ -350,8 +350,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMOD Projects/TouchyRPG/TouchyRPG.fspro
-  sourceBankPath: ../FMOD Projects/TouchyRPG/Build
+  sourceProjectPath: ../FMOD Projects/TownHeroRPG/TownHeroRPG.fspro
+  sourceBankPath: ../FMOD Projects/TownHeroRPG/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

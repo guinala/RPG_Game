@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -2303309
     Data4: 1935728462
   Banks:
-  - {fileID: -472082340314938129}
+  - {fileID: 771311781873546349}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -27,6 +27,46 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1536
+--- !u!114 &-6898052564239329585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Level.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Level.bank
+  Name: Level
+  StudioPath: bank:/Level
+  lastModified: 638511531084766928
+  FileSizes:
+  - Name: Desktop
+    Value: 149536
+  Exists: 1
+--- !u!114 &-6191964959011540258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638511531084967093
+  FileSizes:
+  - Name: Desktop
+    Value: 1332
+  Exists: 1
 --- !u!114 &-4720723414933533283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,7 +86,7 @@ MonoBehaviour:
     Data3: 988245134
     Data4: 1218706143
   Banks:
-  - {fileID: 4386812886458810567}
+  - {fileID: -1082549443906191881}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -74,7 +114,7 @@ MonoBehaviour:
     Data3: 1385075585
     Data4: 283408095
   Banks:
-  - {fileID: 2195041073066346254}
+  - {fileID: -6898052564239329585}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -102,7 +142,7 @@ MonoBehaviour:
     Data3: -1185501286
     Data4: -831418571
   Banks:
-  - {fileID: -472082340314938129}
+  - {fileID: 771311781873546349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -110,7 +150,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
---- !u!114 &-472082340314938129
+--- !u!114 &-1082549443906191881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,15 +160,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/MusicMenu.bank
   m_EditorClassIdentifier: 
-  Path: ../FMOD Projects/TouchyRPG/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638499832039687097
+  Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/MusicMenu.bank
+  Name: MusicMenu
+  StudioPath: bank:/MusicMenu
+  lastModified: 638511531145175840
   FileSizes:
   - Name: Desktop
-    Value: 38464
+    Value: 5966464
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -143,11 +183,11 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6889689261737373256}
-  - {fileID: 2195041073066346254}
-  - {fileID: 1777025871783100800}
-  - {fileID: -472082340314938129}
-  - {fileID: 4386812886458810567}
+  - {fileID: -6191964959011540258}
+  - {fileID: -6898052564239329585}
+  - {fileID: 3670052619874438394}
+  - {fileID: -1082549443906191881}
+  - {fileID: 771311781873546349}
   EditorEvents:
   - {fileID: -2556965145997174707}
   - {fileID: -8341359696986227651}
@@ -156,12 +196,12 @@ MonoBehaviour:
   - {fileID: -4720723414933533283}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1777025871783100800}
+  - {fileID: 3670052619874438394}
   StringsBanks:
-  - {fileID: 6889689261737373256}
-  cacheTime: 638499832039687097
+  - {fileID: -6191964959011540258}
+  cacheTime: 638511531147318941
   cacheVersion: 131609
---- !u!114 &1777025871783100800
+--- !u!114 &771311781873546349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,35 +211,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638499831995486993
+  Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638511531147318941
   FileSizes:
   - Name: Desktop
-    Value: 1486
-  Exists: 1
---- !u!114 &2195041073066346254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Level.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Level.bank
-  Name: Level
-  StudioPath: bank:/Level
-  lastModified: 638499831995381937
-  FileSizes:
-  - Name: Desktop
-    Value: 149536
+    Value: 38464
   Exists: 1
 --- !u!114 &2582992043493735377
 MonoBehaviour:
@@ -244,7 +264,7 @@ MonoBehaviour:
     Data3: 663911555
     Data4: -1083327819
   Banks:
-  - {fileID: -472082340314938129}
+  - {fileID: 771311781873546349}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -252,7 +272,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4386812886458810567
+--- !u!114 &3670052619874438394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,35 +282,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MusicMenu.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../FMOD Projects/TouchyRPG/Build/Desktop/MusicMenu.bank
-  Name: MusicMenu
-  StudioPath: bank:/MusicMenu
-  lastModified: 638499832038277335
+  Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638511531084927005
   FileSizes:
   - Name: Desktop
-    Value: 4654784
-  Exists: 1
---- !u!114 &6889689261737373256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD Projects/TouchyRPG/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638499831995517328
-  FileSizes:
-  - Name: Desktop
-    Value: 1332
+    Value: 1486
   Exists: 1
 --- !u!114 &7858948334680669499
 MonoBehaviour:
@@ -307,7 +307,7 @@ MonoBehaviour:
   Name: Area
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 3
   Default: 0
   ID:
     data1: 4007527795
@@ -318,4 +318,5 @@ MonoBehaviour:
   - MainMenu
   - Town
   - House
+  - Combat
   Exists: 1

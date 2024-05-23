@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{e88a79a5-5863-43a5-8729-16fcc5ee9dd6}">
+		<property name="name">
+			<value>Area</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5ca0218d-cab4-46c3-a0f0-9b88e51ee628}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7661198a-acdb-4ff8-945c-94a0b9719879}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7661198a-acdb-4ff8-945c-94a0b9719879}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>MainMenu</value>
+			<value>Town</value>
+			<value>House</value>
+			<value>Combat</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

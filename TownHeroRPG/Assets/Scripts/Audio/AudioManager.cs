@@ -89,11 +89,16 @@ public class AudioManager : MonoBehaviour
                 _musicInstanceEvent.start();
             }
             _musicInstanceEvent.setParameterByName("Area", (float)Area);
+            Debug.Log("Cambiando a " + (float)Area);
             
         }
                 
         else
+        {
+            Debug.Log("Paro la música");
             _musicInstanceEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+            
     }
 
     private void InitializeMusicMenu(EventReference eventReference)

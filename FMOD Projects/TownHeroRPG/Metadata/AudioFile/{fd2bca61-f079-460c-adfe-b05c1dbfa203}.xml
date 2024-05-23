@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fd2bca61-f079-460c-adfe-b05c1dbfa203}">
+		<property name="assetPath">
+			<value>SFX/Coin/coin_idle.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5365532879818593</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ecb30dfc-8632-4c7e-8567-f167bdaf3772}</destination>
+		</relationship>
+	</object>
+</objects>
