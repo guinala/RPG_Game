@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6751812cd8c2d5c418e749aa363b50c3, type: 3}
-  m_Name: Mutant
+  m_Name: Slime
   m_EditorClassIdentifier: 
-  unitName: Mutant Bee
-  baseHP: 100
-  maxHP: 100
-  currentHP: 100
-  exp: 15
-  unitPrefab: {fileID: 7938767968652046519, guid: 311b7011ca7a6494cbb816eda06d906c, type: 3}
-  inventory: {fileID: 11400000, guid: 2d6e2b3ece055d4489d373e1e46d4fec, type: 2}
+  unitName: Slime
+  baseHP: 35
+  maxHP: 35
+  currentHP: 35
+  exp: 5
+  unitPrefab: {fileID: 7938767968652046519, guid: 2a00f58a1e6b8284aa309b6734ca80ad, type: 3}
+  inventory: {fileID: 11400000, guid: 8721f3a0f62320644ad37db0b2a26391, type: 2}

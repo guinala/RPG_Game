@@ -14349,6 +14349,7 @@ MonoBehaviour:
   playerPosition: {fileID: 1270671131}
   enemies:
   - {fileID: 11400000, guid: 8b59c726208ed6846be73ee424b2d177, type: 2}
+  - {fileID: 11400000, guid: b1764d61f8300f7498fe62a1e602c3be, type: 2}
   enemyPosition: {fileID: 2107674510}
   combatRequestEvent: {fileID: 11400000, guid: 6f4034d01210fee4eb34efcca054bf23, type: 2}
 --- !u!1660057539 &9223372036854775807
