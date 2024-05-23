@@ -89,7 +89,7 @@ public class AudioManager : MonoBehaviour
                 _musicInstanceEvent.start();
             }
             _musicInstanceEvent.setParameterByName("Area", (float)Area);
-            Debug.Log("Cambiando a " + (float)Area);
+           
             
         }
                 
@@ -98,7 +98,9 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Paro la música");
             _musicInstanceEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
-            
+
+        Debug.Log("Mi area actual es a: " + (float)Area);
+
     }
 
     private void InitializeMusicMenu(EventReference eventReference)

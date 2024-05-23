@@ -46270,7 +46270,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 892822086540342311, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: musicArea
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1621343377816089945, guid: 030f30f97e392d049affe608a0f49a2e, type: 3}
       propertyPath: m_IsTrigger
