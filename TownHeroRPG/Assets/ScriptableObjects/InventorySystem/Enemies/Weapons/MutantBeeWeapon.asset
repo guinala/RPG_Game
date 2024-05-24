@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   itemName: Mutant Bee Weapon
-  attackPower: 33
+  attackPower: 20

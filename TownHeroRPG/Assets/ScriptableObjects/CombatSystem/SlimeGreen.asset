@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6751812cd8c2d5c418e749aa363b50c3, type: 3}
+  m_Name: SlimeGreen
+  m_EditorClassIdentifier: 
+  unitName: Slime Green
+  baseHP: 15
+  maxHP: 15
+  currentHP: 15
+  exp: 2
+  unitPrefab: {fileID: 7938767968652046519, guid: 930ae024b3fa0da4fb6378cb195c2eee, type: 3}
+  inventory: {fileID: 11400000, guid: b304877f0f6e18c4a977cec36843b270, type: 2}

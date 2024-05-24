@@ -14350,6 +14350,10 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: 8b59c726208ed6846be73ee424b2d177, type: 2}
   - {fileID: 11400000, guid: b1764d61f8300f7498fe62a1e602c3be, type: 2}
+  - {fileID: 11400000, guid: 2ad5b8d76ad8e9b4da896ccfe6cd238a, type: 2}
+  - {fileID: 11400000, guid: df6f4f1562d45194a8a72f82455ac4ea, type: 2}
+  - {fileID: 11400000, guid: 8da12308e41f3094bbe41ba55e7f99d3, type: 2}
+  - {fileID: 11400000, guid: ea2e251a3281bd74d88aa6144e762e29, type: 2}
   enemyPosition: {fileID: 2107674510}
   combatRequestEvent: {fileID: 11400000, guid: 6f4034d01210fee4eb34efcca054bf23, type: 2}
 --- !u!1660057539 &9223372036854775807

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 238ddbabd6c799f4494bf0f9a95fc88f, type: 3}
-  m_Name: FirstWeapon
+  m_Name: WormWeapon
   m_EditorClassIdentifier: 
-  icon: {fileID: 5821839773869540889, guid: ae2e59adf58c94839a4a49d1a41c5920, type: 3}
-  itemName: First Weapon
-  attackPower: 30
+  icon: {fileID: 0}
+  itemName: Worm Weapon
+  attackPower: 3
