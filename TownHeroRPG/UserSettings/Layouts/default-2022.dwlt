@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 272
     height: 552
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 29
+  controlID: 168
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 30
+  controlID: 91
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1375,7 +1375,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -44640
+  m_LastSelectedObjectID: -43322
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1421,7 +1421,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ScriptableObjects/CombatSystem
+    - Assets/Scripts/Timeline
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1429,30 +1429,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/ScriptableObjects/CombatSystem
+  - Assets/Scripts/Timeline
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\USUARIO\OneDrive\Escritorio\Curso Unity RPG\RPG_Game\TownHeroRPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 321.7593}
-    m_SelectedIDs: d0850000
-    m_LastClickedID: 34256
-    m_ExpandedIDs: 000000008e850000928500009485000096850000988500009a8500009c8500009e850000c685000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 390}
+    m_SelectedIDs: 02860000
+    m_LastClickedID: 34306
+    m_ExpandedIDs: 00000000a2850000a4850000a6850000a8850000aa850000ac850000ae850000b0850000b4850000b685000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Resources
-      m_OriginalName: Resources
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 34250
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_SearchString: 
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e85000090850000928500009485000096850000988500009a8500009c8500009e850000
+    m_ExpandedIDs: 00000000a2850000a4850000a6850000a8850000aa850000ac850000ae850000b0850000b2850000b4850000b6850000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1494,7 +1494,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000d885000082790000b88f0000c2730000e67b0000e47b00007e7500000000000038e200009e8e0000cc7d00004686000002870000068700000e8700004c7d0000908a0000
+    m_ExpandedInstanceIDs: c6230000d885000082790000b88f0000c2730000e67b0000e47b00007e7500000000000038e200009e8e0000cc7d00004686000002870000068700000e8700004c7d0000908a00004c870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1559,9 +1559,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6f5ffff
-      m_LastClickedID: -2602
-      m_ExpandedIDs: 80aeffff88cbfffff4faffff
+      m_SelectedIDs: 5c650000
+      m_LastClickedID: 0
+      m_ExpandedIDs: b8edffffccedffffd0edffffd4edfffff6edffff1eeeffff22eeffff5ceeffff86efffff9aefffffaeefffff4af1fffff4faffff988600009a860000ba8700000c880000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

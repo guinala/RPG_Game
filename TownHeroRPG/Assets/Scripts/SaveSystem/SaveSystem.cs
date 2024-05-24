@@ -31,6 +31,12 @@ public class SaveSystem : ScriptableObject
         }
 	}
 
+	public void Save()
+	{
+		this.SaveInventory();
+		this.SaveDataToDisk();
+	}
+
 	public void SaveDataToDisk()
 	{
 		if (FileManager.MoveFile(saveFilename, backupSaveFilename))
@@ -122,8 +128,9 @@ public class SaveSystem : ScriptableObject
 		{
 			// Get the serialized data (the saved item info)
 			var serializedConsumable = this.saveData.consumables[consumableIndex];
-			// Get the actual Scriptable Object from the all we have from the folder
-			var consumableSO = consumablesSOs.Find((c) => { return c.itemName == serializedConsumable.itemName; });
+            Debug.Log("Consumables: " + serializedConsumable);
+            // Get the actual Scriptable Object from the all we have from the folder
+            var consumableSO = consumablesSOs.Find((c) => { return c.itemName == serializedConsumable.itemName; });
 
 			// If the scriptable object is actually there...
 			if (consumableSO != null) {
@@ -137,5 +144,8 @@ public class SaveSystem : ScriptableObject
 				}
 			}
         }
+
+		
+		
 	}
 }

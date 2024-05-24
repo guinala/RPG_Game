@@ -16,8 +16,13 @@ MonoBehaviour:
   weapons:
   - {fileID: 11400000, guid: 248719be7b1c1c14db12f5362dde3960, type: 2}
   - {fileID: 11400000, guid: 729ffa8d6441c3c498111f4c16e43370, type: 2}
+  - {fileID: 11400000, guid: 92f492c3f3b33d64f9bf92617cb7679a, type: 2}
   consumables:
   - item: {fileID: 11400000, guid: 73eb0f237a460f443aee236bdef3c05a, type: 2}
+    amount: 9
+  - item: {fileID: 11400000, guid: 64a602ea29f9d824590315dcf667e902, type: 2}
+    amount: 9
+  - item: {fileID: 11400000, guid: 64a602ea29f9d824590315dcf667e902, type: 2}
     amount: 9
   - item: {fileID: 11400000, guid: 64a602ea29f9d824590315dcf667e902, type: 2}
     amount: 9
