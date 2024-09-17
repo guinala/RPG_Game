@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\timeline\\dialoguebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline\\dialoguebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\timeline\\dialogueclip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline\\dialogueclip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DialogueBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T12:05:20.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DialogueClip.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueClip.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialogueClip.cs",
