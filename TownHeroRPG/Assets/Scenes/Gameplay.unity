@@ -6271,7 +6271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fd16c1020821842a5a6815efa1b6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueUI: {fileID: 2018425378}
   onConversationStarted:
     m_PersistentCalls:
       m_Calls:

@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class DialogueUI : MonoBehaviour
 {
+    public static DialogueUI Instance;
+
     [Header("Configuration")]
     public float textSpeed;
 
@@ -35,6 +37,7 @@ public class DialogueUI : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         audioSource = this.gameObject.GetComponent<AudioSource>();
         currentAudio = defaultAudio;
         

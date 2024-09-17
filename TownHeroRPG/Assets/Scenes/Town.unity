@@ -46315,33 +46315,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 399392872517651244}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
---- !u!1 &399392872517651243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
-  m_PrefabInstance: {fileID: 399392872517651242}
-  m_PrefabAsset: {fileID: 0}
---- !u!320 &399392872517651244
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399392872517651243}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 1acf3e3c697bc7f4a8e6f2ec5e70a68e, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1001 &5611072526940910501
 PrefabInstance:
   m_ObjectHideFlags: 0

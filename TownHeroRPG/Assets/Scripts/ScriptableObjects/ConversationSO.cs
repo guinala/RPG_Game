@@ -16,5 +16,6 @@ public class ConversationSO : ScriptableObject
     public CharacterSO leftCharacter;
     public CharacterSO rightCharacter;
     public Sentence[] sentences;
+    public bool cutscene = false;
     
 }

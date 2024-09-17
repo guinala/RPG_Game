@@ -1,3 +1,4 @@
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -6,8 +7,9 @@ using UnityEngine.Timeline;
 [System.Serializable]
 public class DialogueClip : PlayableAsset, ITimelineClipAsset
 {
-    // Este campo se usará para enviar información al DialogueManager
-    public string dialogueText;
+    public DialoguePlayable behaviour = new DialoguePlayable();
+    public ConversationSO dialogueText;
+
 
     // Definimos las capacidades del clip en la Timeline
     public ClipCaps clipCaps
@@ -19,10 +21,7 @@ public class DialogueClip : PlayableAsset, ITimelineClipAsset
     public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
     {
         var playable = ScriptPlayable<DialoguePlayable>.Create(graph);
-
-        // Pasamos los datos al behaviour del playable
-        DialoguePlayable behaviour = playable.GetBehaviour();
-        behaviour.dialogueText = dialogueText;
+        playable.GetBehaviour().dialogueText = dialogueText;
 
         return playable;
     }
