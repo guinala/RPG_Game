@@ -46308,6 +46308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4865505640518429149, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+      propertyPath: m_InitialState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
       propertyPath: m_Name
       value: TimelineTest

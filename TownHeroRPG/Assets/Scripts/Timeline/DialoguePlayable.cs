@@ -21,15 +21,16 @@ public class DialoguePlayable : PlayableBehaviour
     // Este método se llama cuando el clip comienza a reproducirse
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
-        Debug.Log("el dialogue es: " + dialogueText);
+        //Debug.Log("el dialogue es: " + dialogueText.leftCharacter);
         // Aquí llamamos al sistema de diálogo (suponiendo que existe un método para lanzar el diálogo)
         //conversationRequestEvent.Raise(dialogueText);
-        if(dialogueText != null && dialogueText != null)
-            DialogueManager.Instance.StartConversation(dialogueText);
-        else
+        if(dialogueText == null)
         {
-            Debug.Log("No se ha encontrado el DialogueManager o el ConversationSO");
+            Debug.Log("Ultra cosas");
+            return;
         }
+        DialogueManager.Instance.StartConversation(dialogueText);
+
 
         // Pausamos el PlayableGraph (que es lo mismo que pausar la Timeline)
         graph.GetRootPlayable(0).SetSpeed(0);

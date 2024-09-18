@@ -39,6 +39,11 @@ public class DialogueUI : MonoBehaviour
     {
         Instance = this;
         audioSource = this.gameObject.GetComponent<AudioSource>();
+        if(defaultAudio.id == null)
+        {
+            Debug.Log("Aqui es donde falla");
+        }
+        InitializeAudioDictionary();
         currentAudio = defaultAudio;
         
     }
@@ -204,12 +209,12 @@ public class DialogueUI : MonoBehaviour
             audioInfoDictionary.Add(audioInfo.id, audioInfo);
         }
 
-
+        Debug.Log("He creado el diccionario de audios");
     }
 
     private void SetCurrentAudioinfo(string id)
     {
-
+        Debug.Log("y el diccionario tiene: " + audioInfoDictionary.Count + " elementos");
         DialogueAudioInfoSO info = null;
         audioInfoDictionary.TryGetValue(id, out info);
         if(info != null)

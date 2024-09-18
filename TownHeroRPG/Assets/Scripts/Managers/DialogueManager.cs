@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         this.sentences = new Queue<Sentence>();
-        DialogueUI.Instance.InitializeAudioDictionary();
+        //DialogueUI.Instance.InitializeAudioDictionary();
     }
 
     public void StartConversation(ConversationSO conversation)
@@ -39,6 +39,15 @@ public class DialogueManager : MonoBehaviour
             this.sentences.Enqueue(sentence);
         }
 
+        Debug.Log("El dialogo es :" + conversation.name + "y ademas");
+        if(DialogueUI.Instance == null)
+        {
+            Debug.Log("Instance es null");
+        }
+
+        if (this.onConversationStarted != null)
+            this.onConversationStarted.Invoke();
+
         DialogueUI.Instance.StartConversation(
             leftCharacterName: conversation.leftCharacter.fullname,
             leftCharacterPortrait: conversation.leftCharacter.portrait,
@@ -46,8 +55,8 @@ public class DialogueManager : MonoBehaviour
             rightCharacterPortrait: conversation.rightCharacter.portrait
         );
 
-        if (this.onConversationStarted != null)
-            this.onConversationStarted.Invoke();
+        //if (this.onConversationStarted != null)
+          //  this.onConversationStarted.Invoke();
 
         this.NextSentence();
     }
@@ -81,6 +90,6 @@ public class DialogueManager : MonoBehaviour
         if (this.onConversationEnded != null)
             this.onConversationEnded.Invoke();
 
-        cutsceneEnded?.Invoke();
+        //cutsceneEnded?.Invoke();
     }
 }
