@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\assets\\scripts\\player\\playerrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\player\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\player\\playerrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\utils\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\assets\\scripts\\utils\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,11 +19,11 @@
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\utils\\questpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\assets\\scripts\\utils\\questpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\questpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\curso unity rpg\\rpg_game\\townherorpg\\assets\\scripts\\utils\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\assets\\scripts\\utils\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,32 +54,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuestPoint.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\QuestPoint.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\QuestPoint.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\QuestPoint.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utils\\QuestPoint.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PlayerAnimation.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T08:59:53.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DialogueTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\DialogueTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\DialogueTrigger.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\DialogueTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utils\\DialogueTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T08:59:17.609Z",
+              "WhenOpened": "2024-09-18T10:01:55.331Z",
               "EditorCaption": ""
             },
             {
@@ -84,7 +75,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "QuestPoint.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\QuestPoint.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\QuestPoint.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\QuestPoint.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\QuestPoint.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:59:53.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DialogueTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\DialogueTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\DialogueTrigger.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\DialogueTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\DialogueTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:59:17.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DialogueUI.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\DialogueUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\DialogueUI.cs",
@@ -92,25 +107,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Utils\\DialogueUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T20:56:55.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T20:56:55.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerRenderer.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Player\\PlayerRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerRenderer.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Player\\PlayerRenderer.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerRenderer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T20:42:18.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "QuestLogUI.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Utils\\QuestLogUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\QuestLogUI.cs",
@@ -122,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Managers\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\DialogueManager.cs",
@@ -130,12 +144,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\DialogueManager.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T20:19:57.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T20:19:57.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DialoguePlayable.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialoguePlayable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialoguePlayable.cs",
@@ -147,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DialogueTrack.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueTrack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialogueTrack.cs",
@@ -159,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DialogueBehaviour.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialogueBehaviour.cs",
@@ -170,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DialogueClip.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Curso Unity RPG\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\DialogueClip.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\DialogueClip.cs",
