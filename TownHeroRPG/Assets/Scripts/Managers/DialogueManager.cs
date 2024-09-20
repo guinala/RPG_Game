@@ -13,9 +13,10 @@ public class DialogueManager : MonoBehaviour
     public UnityEvent onConversationStarted;
     public UnityEvent onConversationEnded;
 
-    public static event Action cutsceneEnded;
+    public event Action cutsceneEnded;
 
     private Queue<Sentence> sentences;
+    private bool cutscene;
 
 
     private void Awake()
@@ -33,13 +34,15 @@ public class DialogueManager : MonoBehaviour
     {
         if (this.sentences.Count != 0)
             return;
-
+        
+        cutscene = conversation.cutscene;
+        
         foreach (var sentence in conversation.sentences)
         {
             this.sentences.Enqueue(sentence);
         }
 
-        Debug.Log("El dialogo es :" + conversation.name + "y ademas");
+        //Debug.Log("El dialogo es :" + conversation.name + "y ademas");
         if(DialogueUI.Instance == null)
         {
             Debug.Log("Instance es null");
@@ -90,6 +93,7 @@ public class DialogueManager : MonoBehaviour
         if (this.onConversationEnded != null)
             this.onConversationEnded.Invoke();
 
-        //cutsceneEnded?.Invoke();
+        if(cutscene)
+            cutsceneEnded?.Invoke();
     }
 }

@@ -16,13 +16,14 @@ public class DialoguePlayable : PlayableBehaviour
     {
         graph = playable.GetGraph();
         thisPlayable = playable;
+        DialogueManager.Instance.cutsceneEnded += JumpToEndOfPlayable;
     }
 
-    // Este método se llama cuando el clip comienza a reproducirse
+    // Este mï¿½todo se llama cuando el clip comienza a reproducirse
     public override void OnBehaviourPlay(Playable playable, FrameData info)
     {
         //Debug.Log("el dialogue es: " + dialogueText.leftCharacter);
-        // Aquí llamamos al sistema de diálogo (suponiendo que existe un método para lanzar el diálogo)
+        // Aquï¿½ llamamos al sistema de diï¿½logo (suponiendo que existe un mï¿½todo para lanzar el diï¿½logo)
         //conversationRequestEvent.Raise(dialogueText);
         if(dialogueText == null)
         {
@@ -34,5 +35,10 @@ public class DialoguePlayable : PlayableBehaviour
 
         // Pausamos el PlayableGraph (que es lo mismo que pausar la Timeline)
         graph.GetRootPlayable(0).SetSpeed(0);
+    }
+    
+    private void JumpToEndOfPlayable()
+    {
+        graph.GetRootPlayable(0).SetTime(graph.GetRootPlayable(0).GetTime() + thisPlayable.GetDuration());
     }
 }

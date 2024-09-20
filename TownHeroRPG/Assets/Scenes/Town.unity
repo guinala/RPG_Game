@@ -8893,6 +8893,10 @@ PrefabInstance:
       propertyPath: sceneCutscenes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 27f6240fde8a6d843a76ce9291e0b6d4, type: 2}
+    - target: {fileID: 4865505640518429149, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1acf3e3c697bc7f4a8e6f2ec5e70a68e, type: 2}
     - target: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
       propertyPath: m_Name
       value: TimelineManager
@@ -8900,8 +8904,77 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1129885210}
+    - targetCorrespondingSourceObject: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1129885211}
   m_SourcePrefab: {fileID: 100100000, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+--- !u!1 &1129885209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469665220187941869, guid: 2f0309177b1ce1b4ca122601f3a6d9ee, type: 3}
+  m_PrefabInstance: {fileID: 1129885208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129885210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129885209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 5f9b559ad3bee6645be8703c39a0e0b0, type: 2}
+    - {fileID: 11400000, guid: 09110e1acd3e05e41a26f983d1075d8f, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2264911808897756396, guid: 1526ea7982f9cfd4a9ed083eec6d81e6, type: 3}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: DisableControls
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2264911808897756396, guid: 1526ea7982f9cfd4a9ed083eec6d81e6, type: 3}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: EnableControls
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1129885211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129885209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b469d9baefad9c4c8faa477d5c41d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 11400000, guid: 66bd255bc1268d642863358e6dfd28c4, type: 2}
 --- !u!1001 &1139315242
 PrefabInstance:
   m_ObjectHideFlags: 0

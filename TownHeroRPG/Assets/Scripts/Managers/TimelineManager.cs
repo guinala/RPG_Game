@@ -7,6 +7,8 @@ public class TimelineManager : MonoBehaviour
 {
     public TimelineSO[] sceneCutscenes;
     private PlayableDirector director;
+    //public UnityEvent onCutsceneStart;
+    //public event Action loadingScreenFade;
 
     private void Awake()
     {

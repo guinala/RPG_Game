@@ -16,8 +16,23 @@ public class PlayerController : MonoBehaviour
 
     //Audio
     private EventInstance _footsteps;
+    
+    
+    //Enable or disable controls
+    private bool controlsEnabled = true;
 
 
+    public void EnableControls()
+    {
+        controlsEnabled = true;
+    }
+    public void DisableControls()
+    {
+        controlsEnabled = false;
+        _movementInput.x = 0;
+        _movementInput.y = 0;
+    }
+    
     private void Start()
     {
         _footsteps = AudioManager.instance.CreateInstance(FMODEvents.instance.footsteps);
@@ -32,7 +47,8 @@ public class PlayerController : MonoBehaviour
 
     public void OnMovement(InputAction.CallbackContext value)
     {
-        _movementInput = value.ReadValue<Vector2>();
+        if(controlsEnabled)
+            _movementInput = value.ReadValue<Vector2>();
     }
 
     public void OnQuest(InputAction.CallbackContext value)
