@@ -104,6 +104,7 @@ public class ShopUI : MonoBehaviour
         for (int weaponIndex = 0; weaponIndex < this._shopInventory.weapons.Count; weaponIndex++)
         {
             var weaponItem = this._shopInventory.weapons[weaponIndex];
+            Debug.Log("El index es" + _weaponPrices[weaponIndex]);
             var weaponPrice = this._weaponPrices[weaponIndex];
 
             if (weaponIndex == 0)

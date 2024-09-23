@@ -16,7 +16,7 @@ public class DialoguePlayable : PlayableBehaviour
     {
         graph = playable.GetGraph();
         thisPlayable = playable;
-        DialogueManager.Instance.cutsceneEnded += JumpToEndOfPlayable;
+        
     }
 
     // Este m�todo se llama cuando el clip comienza a reproducirse
@@ -31,6 +31,7 @@ public class DialoguePlayable : PlayableBehaviour
             return;
         }
         DialogueManager.Instance.StartConversation(dialogueText);
+        DialogueManager.Instance.cutsceneEnded += JumpToEndOfPlayable;
 
 
         // Pausamos el PlayableGraph (que es lo mismo que pausar la Timeline)
@@ -39,6 +40,8 @@ public class DialoguePlayable : PlayableBehaviour
     
     private void JumpToEndOfPlayable()
     {
+        Debug.Log("Odio las timelines");
         graph.GetRootPlayable(0).SetTime(graph.GetRootPlayable(0).GetTime() + thisPlayable.GetDuration());
+        graph.GetRootPlayable(0).SetSpeed(1);
     }
 }

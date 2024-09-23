@@ -2298,8 +2298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopUI: {fileID: 2077697454}
   playerInventory: {fileID: 11400000, guid: 5f20b0bbf1f18aa4ea59336ee3c88da7, type: 2}
-  weaponPrices: 0000000032000000
-  consumablePrices: 3200000064000000
+  weaponPrices: 000000003200000096000000
+  consumablePrices: 320000006400000096000000c8000000
   onShopOpened:
     m_PersistentCalls:
       m_Calls:

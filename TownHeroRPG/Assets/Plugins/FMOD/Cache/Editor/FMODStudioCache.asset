@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Level.bank
   Name: Level
   StudioPath: bank:/Level
-  lastModified: 638622106470234377
+  lastModified: 638624451717607809
   FileSizes:
   - Name: Desktop
     Value: 149536
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638622106470304570
+  lastModified: 638624451717698412
   FileSizes:
   - Name: Desktop
     Value: 1332
@@ -165,7 +165,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/MusicMenu.bank
   Name: MusicMenu
   StudioPath: bank:/MusicMenu
-  lastModified: 638622106500574037
+  lastModified: 638624451750184255
   FileSizes:
   - Name: Desktop
     Value: 5966560
@@ -199,7 +199,7 @@ MonoBehaviour:
   - {fileID: 3670052619874438394}
   StringsBanks:
   - {fileID: -6191964959011540258}
-  cacheTime: 638622106501465706
+  cacheTime: 638624451750868739
   cacheVersion: 131609
 --- !u!114 &771311781873546349
 MonoBehaviour:
@@ -216,7 +216,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638622106501465706
+  lastModified: 638624451750868739
   FileSizes:
   - Name: Desktop
     Value: 38464
@@ -287,7 +287,7 @@ MonoBehaviour:
   Path: ../FMOD Projects/TownHeroRPG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638622106470294551
+  lastModified: 638624451717673110
   FileSizes:
   - Name: Desktop
     Value: 1486

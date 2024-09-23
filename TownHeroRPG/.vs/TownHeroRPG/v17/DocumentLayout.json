@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\RPG_Game\\TownHeroRPG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\rpg_game\\townherorpg\\assets\\scripts\\managers\\loadingscreenui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\loadingscreenui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|c:\\users\\usuario\\onedrive\\escritorio\\rpg_game\\townherorpg\\assets\\scripts\\timeline\\timelineso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF0B5DE5-A633-4C5B-D925-B6147B630DAF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timeline\\timelineso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoadingScreenUI.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Managers\\LoadingScreenUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\LoadingScreenUI.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Managers\\LoadingScreenUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\LoadingScreenUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:48:34.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TimelineSO.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\RPG_Game\\TownHeroRPG\\Assets\\Scripts\\Timeline\\TimelineSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Timeline\\TimelineSO.cs",
@@ -28,10 +49,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T13:45:42.496Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

@@ -1,4 +1,6 @@
 using ScriptableObjectArchitecture;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -10,6 +12,7 @@ public class LoadingScreenUI : MonoBehaviour
     [Header("Private Dependencies")]
     private Animator _animator;
 
+    
     private void Awake()
     {
         _animator = GetComponent<Animator>();

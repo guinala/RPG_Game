@@ -1,14 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Playables;
 
 public class TimelineManager : MonoBehaviour
 {
     public TimelineSO[] sceneCutscenes;
     private PlayableDirector director;
-    //public UnityEvent onCutsceneStart;
-    //public event Action loadingScreenFade;
+    public UnityEvent onCutsceneStart;
+    public CanvasGroup fade;
 
     private void Awake()
     {
@@ -31,5 +33,17 @@ public class TimelineManager : MonoBehaviour
                 director.Play();
             }
         }
+    }
+
+    public void FadeEffect()
+    {
+        StartCoroutine(FadeCoroutine());
+    }
+    
+    private IEnumerator FadeCoroutine()
+    {
+        StartCoroutine(Helper.IEFade(fade, 1f, 1f));
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(Helper.IEFade(fade, 0f, 1f));
     }
 }

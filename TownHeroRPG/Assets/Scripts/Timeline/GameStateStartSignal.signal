@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 626c3f74ac5b39d46b3d650d6912dd6c, type: 3}
-  m_Name: InitialCutscene
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: GameStateStartSignal
   m_EditorClassIdentifier: 
-  cutscene: {fileID: 11400000, guid: 1acf3e3c697bc7f4a8e6f2ec5e70a68e, type: 2}
-  startType: 0
-  visited: 1

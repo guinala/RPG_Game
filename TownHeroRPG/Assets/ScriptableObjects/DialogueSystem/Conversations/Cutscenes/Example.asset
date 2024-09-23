@@ -16,9 +16,12 @@ MonoBehaviour:
   rightCharacter: {fileID: 11400000, guid: ac43c614334771d409bb45b786961e64, type: 2}
   sentences:
   - character: {fileID: 11400000, guid: 64ddd453acb74e346a2959e97f3b8a23, type: 2}
-    text: This is an exam. Say something!
+    text: This is an initial Cutscene. Welcome to TownHero!
   - character: {fileID: 11400000, guid: ac43c614334771d409bb45b786961e64, type: 2}
-    text: HI
+    text: Oh! Great!
   - character: {fileID: 11400000, guid: 64ddd453acb74e346a2959e97f3b8a23, type: 2}
-    text: ...
+    text: In this little game. You can do a quest if you speak with me. You can also
+      enter to that house, and If you walk to the north, you can talk with the pig
+      to buy items and enter to a combat system If you walk more to the top, in the
+      trees.
   cutscene: 1
