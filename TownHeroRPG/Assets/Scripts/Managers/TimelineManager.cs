@@ -11,6 +11,7 @@ public class TimelineManager : MonoBehaviour
     private PlayableDirector director;
     public UnityEvent onCutsceneStart;
     public CanvasGroup fade;
+    
 
     private void Awake()
     {
